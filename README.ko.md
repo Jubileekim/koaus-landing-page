@@ -1,4 +1,4 @@
-# koaus 큐레이티드 숍
+# Discover Korean lifestyle goods
 
 [English](README.md) | [한국어](README.ko.md)
 
