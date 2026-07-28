@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop and pre-order thoughtfully curated Korean desk, room, carry, and gift goods."
+    />
+    <meta name="theme-color" content="#f8f5ee" />
+    <title>koaus — Curated K-lifestyle Goods</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/catalog.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <div class="shell header-inner">
+        <a class="wordmark" href="index.html" aria-label="koaus home">koaus</a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="shop.html">Shop</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="about.html#for-brands">For Brands</a>
+          <a href="about.html#checker">Checker</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button search-toggle" type="button" aria-label="Open search" aria-expanded="false" aria-controls="search-panel">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+          </button>
+          <button class="icon-button bag-button" type="button" aria-label="Saved picks">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5h14l-1 12H6z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+            <span class="bag-count" id="bag-count" aria-live="polite">0</span>
+          </button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span></span><span></span>
+          </button>
+          <button class="header-cta" type="button" data-open-modal="launch-modal">Join the Launch</button>
+        </div>
+      </div>
+
+      <div class="search-panel" id="search-panel" hidden>
+        <div class="shell search-inner">
+          <label for="site-search">Search koaus</label>
+          <input id="site-search" type="search" placeholder="Try “desk”, “gift”, or “stationery”" autocomplete="off" />
+          <button type="button" class="text-button search-close">Close</button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="shop.html">Shop</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="about.html#for-brands">For Brands</a>
+        <a href="about.html#checker">Checker</a>
+        <button class="button button--dark" type="button" data-open-modal="launch-modal">Join the Launch</button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="shop-hero" aria-labelledby="hero-title">
+        <div class="shell hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Curated in Seoul · Shared worldwide</p>
+            <h1 id="hero-title">Small Korean finds for a <em>better everyday.</em></h1>
+            <p class="hero-description">
+              Discover and vote for well-designed Korean lifestyle goods before their global launch.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--dark" href="shop.html">Enter the shop <span aria-hidden="true">→</span></a>
+              <a class="button button--outline" href="#new-arrivals">New arrivals</a>
+            </div>
+            <div class="social-proof">
+              <div class="avatar-stack" aria-hidden="true">
+                <span>J</span><span>M</span><span>A</span>
+              </div>
+              <span>Chosen with early koaus voters</span>
+              <span class="proof-heart" aria-hidden="true">♥</span>
+            </div>
+          </div>
+          <div class="hero-image-wrap">
+            <img
+              src="images/koaus-hero-collection.jpg"
+              alt="A curated desk collection with a sage lamp, gingham pouch, notebooks, mug, and stationery"
+              width="1597"
+              height="985"
+              fetchpriority="high"
+            />
+            <span class="hero-note">Seoul pick <i>✦</i></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-section" aria-labelledby="categories-title" data-reveal>
+        <div class="shell">
+          <div class="visually-hidden">
+            <h2 id="categories-title">Shop by category</h2>
+          </div>
+          <div class="category-grid">
+            <a class="category-card category-card--desk" href="shop.html?category=Desk%20Goods">
+              <div>
+                <h3>Desk</h3>
+                <p>Pens, notebooks, organizers and little helpers.</p>
+                <span class="round-arrow" aria-hidden="true">→</span>
+              </div>
+              <img class="category-image" src="images/product-desk-organizer.jpg" alt="" width="1000" height="1000" loading="lazy" />
+            </a>
+            <a class="category-card category-card--room" href="shop.html?category=Lifestyle">
+              <div>
+                <h3>Room</h3>
+                <p>Decor, soft light, fragrance and quiet details.</p>
+                <span class="round-arrow" aria-hidden="true">→</span>
+              </div>
+              <img class="category-image" src="images/product-stone-plate.jpg" alt="" width="1000" height="1000" loading="lazy" />
+            </a>
+            <a class="category-card category-card--fashion" href="shop.html?category=Fashion">
+              <div>
+                <h3>Fashion</h3>
+                <p>Easy bags and considered pieces for every day.</p>
+                <span class="round-arrow" aria-hidden="true">→</span>
+              </div>
+              <img class="category-image" src="images/product-breeze-tote.jpg" alt="" width="1000" height="1000" loading="lazy" />
+            </a>
+            <a class="category-card category-card--gift" href="shop.html?category=Gift%20Set">
+              <div>
+                <h3>Gift</h3>
+                <p>Thoughtful picks for someone special—or you.</p>
+                <span class="round-arrow" aria-hidden="true">→</span>
+              </div>
+              <img class="category-image" src="images/product-oblong-mug.png" alt="" width="1000" height="1000" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="validation-section" id="how-it-works" aria-labelledby="validation-title" data-reveal>
+        <div class="shell">
+          <div class="validation-heading">
+            <p class="section-kicker">Why koaus exists</p>
+            <h2 id="validation-title">From hard-to-find to ready-to-launch.</h2>
+            <p>
+              Korean lifestyle goods have global fans, but discovery and market testing still feel
+              fragmented. koaus turns early buyer interest into a clearer, lower-risk launch signal.
+            </p>
+          </div>
+          <div class="validation-flow">
+            <article>
+              <div class="flow-card-top">
+                <span class="flow-number">01 · Problem</span>
+                <span class="flow-icon flow-icon--problem" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <rect x="8" y="11" width="19" height="19" rx="5"></rect>
+                    <rect x="8" y="36" width="19" height="19" rx="5"></rect>
+                    <path d="M36 18h8M36 43h5" stroke-dasharray="3 4"></path>
+                    <circle cx="46" cy="31" r="9"></circle>
+                    <path d="m52.5 37.5 6 6"></path>
+                  </svg>
+                </span>
+              </div>
+              <h3>Great Korean goods stay difficult to discover.</h3>
+              <p>Global buyers miss small brands, while makers lack clear U.S. demand signals.</p>
+            </article>
+            <article>
+              <div class="flow-card-top">
+                <span class="flow-number">02 · Solution</span>
+                <span class="flow-icon flow-icon--solution" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <rect x="12" y="8" width="40" height="48" rx="9"></rect>
+                    <path d="M24 23h16M24 31h10"></path>
+                    <path d="M32 47s-9-5.2-9-11.2c0-5 6.1-6.2 9-2.2 2.9-4 9-2.8 9 2.2C41 41.8 32 47 32 47Z"></path>
+                  </svg>
+                </span>
+              </div>
+              <h3>Discover, save, and vote before launch.</h3>
+              <p>koaus curates promising goods and measures real buyer interest before inventory.</p>
+            </article>
+            <article>
+              <div class="flow-card-top">
+                <span class="flow-number">03 · Effect</span>
+                <span class="flow-icon flow-icon--effect" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="m11 24 21-11 21 11-21 11-21-11Z"></path>
+                    <path d="M11 24v22l21 11 21-11V24M32 35v22"></path>
+                    <path d="M45 10h10M50 5v10"></path>
+                  </svg>
+                </span>
+              </div>
+              <h3>Launch what people actually want.</h3>
+              <p>Buyers get earlier access and brands test demand with less cost and risk.</p>
+            </article>
+          </div>
+          <div class="validation-actions">
+            <a class="button button--outline" href="about.html#how-it-works">See the full process</a>
+            <button class="button button--dark" type="button" data-open-modal="product-modal">Request a Product Check</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section" id="featured" aria-labelledby="featured-title" data-reveal>
+        <div class="shell">
+          <div class="section-top">
+            <div>
+              <p class="section-kicker">Shop preview</p>
+              <h2 id="featured-title">A glimpse of the drop <span aria-hidden="true">✦</span></h2>
+              <p>Three community favorites. Continue to the dedicated shop for the full catalog.</p>
+              <p class="fx-note">Sample USD prices converted at ₩1,461 = $1 using ECB reference rates published July 24, 2026. Shipping and launch markup are not included.</p>
+            </div>
+            <a class="view-all" id="view-all" href="shop.html">Visit the shop <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="store-grid home-preview-grid" id="product-grid"></div>
+          <p class="product-feedback" id="product-feedback" aria-live="polite"></p>
+          <p class="catalog-note">
+            Educational MVP reference catalog. Product names, photos, and trademarks belong to their respective brands and sellers;
+            source links open the original 29CM or Ohouse listings. These items are not presented as current koaus inventory.
+          </p>
+        </div>
+      </section>
+
+      <section class="ugc-section" id="community-reels" aria-labelledby="ugc-title" data-reveal>
+        <div class="shell">
+          <div class="ugc-heading">
+            <div>
+              <p class="section-kicker">Community desk diaries</p>
+              <h2 id="ugc-title">See it in real life.</h2>
+              <p>Short-form creator concepts showing how a koaus pick can fit into an everyday routine.</p>
+            </div>
+            <a class="social-follow" href="https://www.instagram.com/koaus.shop" target="_blank" rel="noreferrer">
+              Follow @koaus.shop <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="reel-grid reel-grid--video">
+            <article class="reel-card">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/product-desk-organizer.jpg" aria-label="A person tidying and arranging objects on a home office desk">
+                <source src="videos/ugc-desk-reset.mp4" type="video/mp4" />
+              </video>
+              <span class="reel-shade" aria-hidden="true"></span>
+              <span class="reel-top"><b>Real routine</b><small>Desk reset</small></span>
+              <button class="video-sound-toggle" type="button" aria-label="Turn sound on" aria-pressed="false">Sound off</button>
+              <span class="reel-copy"><strong>Resetting the desk after work</strong><small>Video by Ron Lach · Pexels</small></span>
+              <a class="reel-credit-link" href="https://www.pexels.com/video/a-man-tidying-up-his-desk-10567192/" target="_blank" rel="noreferrer" aria-label="View desk reset video source on Pexels"></a>
+            </article>
+            <article class="reel-card">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/product-diary.jpg" aria-label="A person writing personal notes in a diary at a desk">
+                <source src="videos/ugc-journaling.mp4" type="video/mp4" />
+              </video>
+              <span class="reel-shade" aria-hidden="true"></span>
+              <span class="reel-top"><b>Real routine</b><small>Journaling</small></span>
+              <button class="video-sound-toggle" type="button" aria-label="Turn sound on" aria-pressed="false">Sound off</button>
+              <span class="reel-copy"><strong>A quiet diary moment at home</strong><small>Video by Max Vakhtbovych · Pexels</small></span>
+              <a class="reel-credit-link" href="https://www.pexels.com/video/person-writing-a-diary-6771504/" target="_blank" rel="noreferrer" aria-label="View journaling video source on Pexels"></a>
+            </article>
+            <article class="reel-card">
+              <video autoplay muted loop playsinline preload="metadata" poster="images/product-stone-plate.jpg" aria-label="A person organizing jars and everyday items on a kitchen counter">
+                <source src="videos/ugc-kitchen-organizing.mp4" type="video/mp4" />
+              </video>
+              <span class="reel-shade" aria-hidden="true"></span>
+              <span class="reel-top"><b>Real routine</b><small>Home organizing</small></span>
+              <button class="video-sound-toggle" type="button" aria-label="Turn sound on" aria-pressed="false">Sound off</button>
+              <span class="reel-copy"><strong>Making everyday storage feel calmer</strong><small>Video by Ron Lach · Pexels</small></span>
+              <a class="reel-credit-link" href="https://www.pexels.com/video/a-man-organizing-a-kitchen-counter-10568461/" target="_blank" rel="noreferrer" aria-label="View organizing video source on Pexels"></a>
+            </article>
+          </div>
+          <p class="ugc-disclaimer">
+            Real-life stock footage used under the Pexels license as an MVP stand-in. Replace with permission-cleared customer submissions when the creator program launches.
+          </p>
+        </div>
+      </section>
+
+      <section class="lookbook-section" id="new-arrivals" aria-labelledby="lookbook-title" data-reveal>
+        <div class="shell lookbook">
+          <div class="lookbook-copy">
+            <p class="section-kicker">The tidy desk edit</p>
+            <h2 id="lookbook-title">Little things,<br /><em>beautifully in place.</em></h2>
+            <p>Thoughtful pieces for a more organized, lighter, and happier way of living.</p>
+            <a class="button button--outline" href="shop.html">Explore the shop</a>
+          </div>
+          <div class="lookbook-panel panel-one">
+            <img src="images/product-desk-organizer.jpg" alt="White and navy modular desk organizers arranged on a bright desk" width="1000" height="1000" loading="lazy" />
+          </div>
+          <div class="lookbook-panel panel-two">
+            <img src="images/product-breeze-tote.jpg" alt="A compact brown tote bag with navy trim styled with a neutral outfit" width="1000" height="1000" loading="lazy" />
+          </div>
+          <div class="lookbook-panel panel-three">
+            <img src="images/product-stone-plate.jpg" alt="An ivory sculptural stone plate in soft afternoon light" width="1000" height="1000" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-story" id="brand-story" aria-labelledby="brand-title" data-reveal>
+        <div class="shell story-layout">
+          <div class="story-title">
+            <h2 id="brand-title">koaus is a curation shop for small joys and better daily lives.</h2>
+            <span class="story-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 39S8 30 8 18.5C8 9.8 19 7.2 24 14c5-6.8 16-4.2 16 4.5C40 30 24 39 24 39Z"></path>
+                <path d="M35 8h7M38.5 4.5v7"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="story-copy">
+            <p>
+              We partner with independent Korean brands that value thoughtful design and everyday beauty.
+              Every pick is selected in Seoul and tested with global buyers before a wider launch.
+            </p>
+            <a href="about.html">Learn how koaus works <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="value-grid">
+            <article>
+              <span class="value-icon value-icon--green" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 38S9 29.6 9 18.8C9 10.6 19.3 8.2 24 14.6c4.7-6.4 15-4 15 4.2C39 29.6 24 38 24 38Z"></path>
+                </svg>
+              </span>
+              <h3>Curated with care</h3>
+              <p>Only what we truly love and use.</p>
+            </article>
+            <article>
+              <span class="value-icon value-icon--blue" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 39V21"></path>
+                  <path d="M24 27c-8 0-13-4.2-13-12 8 0 13 4.2 13 12ZM24 31c8 0 13-4.2 13-12-8 0-13 4.2-13 12Z"></path>
+                  <path d="M17 39h14"></path>
+                </svg>
+              </span>
+              <h3>Independent brands</h3>
+              <p>Supporting small Korean creators.</p>
+            </article>
+            <article>
+              <span class="value-icon value-icon--coral" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="m9 17 15-8 15 8-15 8-15-8Z"></path>
+                  <path d="M9 17v16l15 8 15-8V17M24 25v16"></path>
+                  <path d="m13 8-4 4 4 4M35 40l4-4-4-4"></path>
+                </svg>
+              </span>
+              <h3>Pre-order, not waste</h3>
+              <p>Testing demand before inventory.</p>
+            </article>
+            <article>
+              <span class="value-icon value-icon--gold" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 7c1.8 10.1 6.9 15.2 17 17-10.1 1.8-15.2 6.9-17 17-1.8-10.1-6.9-15.2-17-17 10.1-1.8 15.2-6.9 17-17Z"></path>
+                  <path d="M38 5v7M34.5 8.5h7"></path>
+                </svg>
+              </span>
+              <h3>Everyday joy</h3>
+              <p>Objects that fit naturally into life.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-strip" aria-labelledby="join-title" data-reveal>
+        <div class="shell join-inner">
+          <div>
+            <p class="section-kicker">Vote on the next drop</p>
+            <h2 id="join-title">Help choose what launches next.</h2>
+          </div>
+          <button class="button button--dark" type="button" data-open-modal="launch-modal">Join the launch list <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-main">
+        <div>
+          <a class="wordmark" href="#top">koaus</a>
+          <p>Curated Korean lifestyle goods for global buyers.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="shop.html">Shop</a>
+          <a href="about.html#for-brands">For Brands</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="mailto:koaus.market@gmail.com">koaus.market@gmail.com</a>
+          <a href="https://www.instagram.com/koaus.shop" target="_blank" rel="noreferrer">Instagram ↗</a>
+          <span class="social-coming-soon">TikTok · coming soon</span>
+        </div>
+      </div>
+      <div class="footer-promise">
+        <div class="shell">
+          <span>✈ Ships from Seoul</span>
+          <span>♡ Community curated</span>
+          <span>↻ Small-batch testing</span>
+          <span>© <span id="current-year"></span> koaus</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="saved-drawer" id="saved-drawer" hidden>
+      <div class="drawer-backdrop" data-close-drawer></div>
+      <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="saved-title">
+        <div class="drawer-header">
+          <div>
+            <p class="section-kicker">Your shortlist</p>
+            <h2 id="saved-title">Saved picks</h2>
+          </div>
+          <button class="drawer-close" type="button" data-close-drawer aria-label="Close saved picks">×</button>
+        </div>
+        <div id="saved-list" class="saved-list"></div>
+        <button class="button button--dark button--full" type="button" data-open-modal="launch-modal">Get launch updates</button>
+      </aside>
+    </div>
+
+    <div class="modal" id="launch-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="launch-modal-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close launch list dialog">×</button>
+        <p class="section-kicker">Early access from Seoul</p>
+        <h2 id="launch-modal-title">Join the koaus launch list.</h2>
+        <p>Get new picks, voting updates, and first access when a product is ready.</p>
+        <form id="launch-form" novalidate>
+          <label for="launch-name">Name</label>
+          <input id="launch-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+          <label for="launch-email">Email address</label>
+          <input id="launch-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          <label for="favorite-category">Favorite category</label>
+          <select id="favorite-category" name="category" required>
+            <option value="">Choose one</option>
+            <option>Stationery</option>
+            <option>Desk Goods</option>
+            <option>Fashion</option>
+            <option>Gift Sets</option>
+            <option>Lifestyle Goods</option>
+          </select>
+          <button class="button button--dark button--full" type="submit">Keep me in the loop</button>
+          <p class="form-message" aria-live="polite"></p>
+          <p class="prototype-note">MVP note: this submission is stored only in your browser until a live email endpoint is connected.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="product-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close product check dialog">×</button>
+        <p class="section-kicker">For Korean brands</p>
+        <h2 id="product-modal-title">Request a product check.</h2>
+        <p>Share a few details and koaus will review the product’s U.S. test potential.</p>
+        <form id="product-form" novalidate>
+          <label for="brand-name">Brand name</label>
+          <input id="brand-name" name="brandName" type="text" autocomplete="organization" placeholder="Your brand" required />
+          <label for="product-category">Product category</label>
+          <select id="product-category" name="category" required>
+            <option value="">Choose a category</option>
+            <option>Stationery</option>
+            <option>Desk Goods</option>
+            <option>Fashion</option>
+            <option>Gift Sets</option>
+            <option>Lifestyle Goods</option>
+          </select>
+          <label for="target-price">Target U.S. price</label>
+          <div class="modal-price-input"><span>$</span><input id="target-price" name="targetPrice" type="number" min="0.01" step="0.01" placeholder="49" required /></div>
+          <label for="brand-email">Email</label>
+          <input id="brand-email" name="email" type="email" autocomplete="email" placeholder="hello@brand.com" required />
+          <label for="test-goal">What do you want to test?</label>
+          <textarea id="test-goal" name="testGoal" rows="3" placeholder="Product appeal, pricing, content angle…" required></textarea>
+          <button class="button button--dark button--full" type="submit">Send product check request</button>
+          <p class="form-message" aria-live="polite"></p>
+          <p class="prototype-note">MVP note: requests are stored on this device for the frontend prototype.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal product-detail-modal" id="product-detail-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel product-detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-product-name">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close product details">×</button>
+        <div class="product-detail-visual">
+          <img id="detail-product-image" src="" alt="" width="1000" height="1000" />
+          <span class="status-tag" id="detail-product-status"></span>
+        </div>
+        <div class="product-detail-copy">
+          <p class="section-kicker" id="detail-product-category">Curated pick</p>
+          <h2 id="detail-product-name">Product details</h2>
+          <p class="detail-original-name" id="detail-original-name"></p>
+          <p id="detail-product-description"></p>
+          <dl class="detail-facts">
+            <div><dt>Maker</dt><dd id="detail-product-maker"></dd></div>
+            <div><dt>Sample price</dt><dd id="detail-product-price"></dd></div>
+            <div><dt>Launch stage</dt><dd id="detail-product-stage"></dd></div>
+          </dl>
+          <p class="detail-note">Sample pricing excludes international shipping, duties, and future launch markup.</p>
+          <div class="detail-actions">
+            <button class="button button--dark" id="detail-interest-button" type="button">Register pre-order interest</button>
+            <a class="button button--outline" id="detail-source-link" href="#" target="_blank" rel="noreferrer">Original listing ↗</a>
+          </div>
+          <p class="detail-feedback" id="detail-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
