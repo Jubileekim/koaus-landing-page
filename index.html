@@ -20,13 +20,15 @@
         <a href="#process" data-i18n="navProcess">진행 방식</a>
         <a href="#fit" data-i18n="navFit">적합한 브랜드</a>
         <a href="#contact" data-i18n="navContact">문의하기</a>
+        <a class="export-voucher-nav" href="export-voucher.html" data-i18n="navExportVoucher">수출바우처</a>
       </nav>
       <div class="header-actions">
+        <a class="shop-switch-link" href="http://localhost:8001" aria-label="Go to Koaus Shop">koaus shop <span aria-hidden="true">↗</span></a>
         <div class="language-toggle" aria-label="Language switcher">
           <button type="button" data-language="ko" class="is-active">KO</button>
           <button type="button" data-language="en">EN</button>
         </div>
-        <a class="button button--dark" href="#contact" data-i18n="requestPilot">파일럿 문의</a>
+        <a class="button button--dark" href="#contact" data-i18n="requestPilot">미국 런칭 문의</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">☰</button>
       </div>
     </div>
@@ -35,36 +37,127 @@
       <a href="#process" data-i18n="navProcess">진행 방식</a>
       <a href="#fit" data-i18n="navFit">적합한 브랜드</a>
       <a href="#contact" data-i18n="navContact">문의하기</a>
+      <a class="mobile-shop-link" href="http://localhost:8001" aria-label="Go to Koaus Shop">koaus shop <span aria-hidden="true">↗</span></a>
+      <a class="mobile-export-voucher-link" href="export-voucher.html" data-i18n="navExportVoucher">수출바우처</a>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="hero">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">한국 브랜드 → 미국 시장</p>
-          <h1 data-i18n="heroTitle">감이 아니라 <em>증거로</em> 미국에 진출하세요.</h1>
-          <p data-i18n="heroBody">Koaus는 한국의 뷰티·라이프스타일 브랜드가 미국 마이크로 크리에이터, UGC, 아마존 실행을 통해 실제 시장 반응을 검증하도록 돕습니다.</p>
-          <div class="hero-actions">
-            <a class="button button--lime" href="#contact" data-i18n="heroPrimary">30일 파일럿 문의하기 →</a>
-            <a class="button button--ghost" href="#services" data-i18n="heroSecondary">서비스 보기</a>
-          </div>
-          <div class="hero-proof">
-            <div><strong>10–30</strong><span data-i18n="proofCreators">파일럿별 타깃 크리에이터</span></div>
-            <div><strong>30일</strong><span data-i18n="proofDays">브리프부터 시장 신호까지</span></div>
-            <div><strong>1 system</strong><span data-i18n="proofSystem">콘텐츠·리스팅·론칭 통합</span></div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="images/koaus-hero-collection.jpg" alt="글로벌 론칭을 준비하는 한국 라이프스타일 제품 컬렉션" width="1597" height="985" fetchpriority="high" />
-          <div class="hero-card">
-            <div class="hero-card-top"><span class="eyebrow" style="color:#5f675f" data-i18n="pilotFormat">파일럿 구성</span><span class="pill" data-i18n="smallBrands">초기 브랜드 전용</span></div>
-            <h2 data-i18n="heroCardTitle">크리에이터 콘텐츠를 실제 판매 자산으로 연결합니다.</h2>
-            <p data-i18n="heroCardBody">시장 피드백, 콘텐츠 사용권, 아마존 자산, 그리고 다음 단계 의사결정까지.</p>
-          </div>
-        </div>
+    <section class="hero hero--ugc" aria-labelledby="hero-title">
+  <div class="ugc-mosaic" aria-hidden="true">
+    <div class="ugc-column ugc-column--1" style="--ugc-duration:28s;--ugc-direction:normal">
+  <div class="ugc-track">
+    <div class="ugc-loop-set">
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-01.mp4" />
+  </video>
+</article>
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-02.mp4" />
+  </video>
+</article>
+</div>
+    <div class="ugc-loop-set">
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-01.mp4" />
+  </video>
+</article>
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-02.mp4" />
+  </video>
+</article>
+</div>
+  </div>
+</div><div class="ugc-column ugc-column--2" style="--ugc-duration:34s;--ugc-direction:reverse">
+  <div class="ugc-track">
+    <div class="ugc-loop-set">
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-03.mp4" />
+  </video>
+</article>
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-04.mp4" />
+  </video>
+</article>
+</div>
+    <div class="ugc-loop-set">
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-03.mp4" />
+  </video>
+</article>
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-04.mp4" />
+  </video>
+</article>
+</div>
+  </div>
+</div><div class="ugc-column ugc-column--3" style="--ugc-duration:31s;--ugc-direction:normal">
+  <div class="ugc-track">
+    <div class="ugc-loop-set">
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-05.mp4" />
+  </video>
+</article>
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-06.mp4" />
+  </video>
+</article>
+</div>
+    <div class="ugc-loop-set">
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-05.mp4" />
+  </video>
+</article>
+<article class="ugc-card" aria-hidden="true">
+  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
+    <source src="videos/hero/ugc-06.mp4" />
+  </video>
+</article>
+</div>
+  </div>
+</div>
+  </div>
+  <div class="hero-ugc-shade" aria-hidden="true"></div>
+
+  <div class="shell hero-ugc-inner">
+    <div class="hero-ugc-copy" data-reveal>
+      <p class="eyebrow" data-i18n="heroEyebrow">한국 브랜드 → 미국 시장</p>
+      <h1 id="hero-title" data-i18n="heroTitle">미국 진출, <em>감이 아니라 반응으로</em> 결정하세요.</h1>
+      <p class="hero-ugc-body" data-i18n="heroBody">Koaus는 한국 뷰티·라이프스타일 브랜드가 미국 크리에이터 콘텐츠와 커머스 파일럿을 통해 시장 반응을 작게 검증하고 다음 결정을 내리도록 돕습니다.</p>
+
+      <div class="hero-actions">
+        <a class="button button--lime" href="#contact" data-i18n="heroPrimary">미국 런칭 문의 →</a>
+        <a class="button button--glass" href="#services" data-i18n="heroSecondary">서비스 보기</a>
       </div>
-    </section>
+    </div>
+
+    <div class="hero-ugc-proof" data-reveal>
+      <div>
+        <strong>10–30</strong>
+        <span data-i18n="proofCreators">파일럿별 타깃 크리에이터</span>
+      </div>
+      <div>
+        <strong>30 days</strong>
+        <span data-i18n="proofDays">브리프부터 시장 반응까지</span>
+      </div>
+      <div>
+        <strong>UGC → Commerce</strong>
+        <span data-i18n="proofSystem">콘텐츠·리스팅·런치 연결</span>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="logo-strip">
       <div class="shell logo-strip-inner">
@@ -130,29 +223,118 @@
       </div>
     </section>
 
-    <section class="cta" id="contact" data-reveal>
-      <div class="shell cta-card">
-        <p class="section-kicker" style="color:#111713" data-i18n="contactKicker">Founding Pilot Partners</p>
-        <h2 data-i18n="contactTitle">한 제품으로 시작해, 더 명확한 미국 진출 결정을 얻으세요.</h2>
-        <p class="audience-note" data-i18n="contactBody">초기 한국 뷰티·라이프스타일 브랜드의 첫 크리에이터 기반 미국 론칭 파일럿을 소수 모집합니다.</p>
-        <form class="lead-card" id="lead-form" novalidate>
-          <h3 data-i18n="formTitle">파일럿 문의 남기기</h3>
-          <p data-i18n="formIntro">브랜드와 제품 정보를 남겨주시면 파일럿 적합성을 검토할 수 있도록 저장합니다.</p>
-          <div class="lead-grid">
-            <div class="lead-field"><label for="brand-name" data-i18n="labelBrand">브랜드명</label><input id="brand-name" name="brandName" required autocomplete="organization" /></div>
-            <div class="lead-field"><label for="contact-name" data-i18n="labelName">담당자명</label><input id="contact-name" name="contactName" required autocomplete="name" /></div>
-            <div class="lead-field"><label for="email" data-i18n="labelEmail">이메일</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="name@brand.com" /></div>
-            <div class="lead-field"><label for="category" data-i18n="labelCategory">제품 카테고리</label><select id="category" name="category" required><option value="" data-i18n="selectPlaceholder">선택하세요</option><option>Beauty</option><option>Hair / Body</option><option>Lifestyle</option><option>Stationery</option><option>Fashion / Accessories</option><option>Other</option></select></div>
-            <div class="lead-field lead-field--full"><label for="url" data-i18n="labelUrl">웹사이트 또는 인스타그램</label><input id="url" name="url" type="url" placeholder="https://" /></div>
-            <div class="lead-field lead-field--full"><label for="goal" data-i18n="labelGoal">미국 시장에서 가장 검증하고 싶은 것</label><textarea id="goal" name="goal" rows="4" required></textarea></div>
-          </div>
-          <label class="lead-consent"><input type="checkbox" name="consent" required /><span data-i18n="consent">문의 검토와 회신을 위해 위 정보를 저장하는 데 동의합니다.</span></label>
-          <button class="button button--dark" type="submit" data-i18n="submit">문의 정보 저장하기 →</button>
-          <p class="form-message" aria-live="polite"></p>
-          <p class="form-note" data-i18n="formNote">현재 MVP에서는 입력 정보가 이 브라우저에 저장됩니다. 실제 이메일 수집을 위해서는 Formspree, Tally, Google Forms 또는 자체 백엔드 연결이 필요합니다.</p>
-        </form>
+    <section class="launch-contact" id="contact" aria-labelledby="launch-contact-title">
+  <div class="shell launch-contact__grid">
+    <div class="launch-contact__intro" data-reveal>
+      <p class="launch-contact__kicker" data-i18n="contactKicker">U.S. LAUNCH INQUIRY</p>
+      <h2 id="launch-contact-title" data-i18n="contactTitle">차별화된<br />미국 런칭을<br />시작해보세요.</h2>
+      <p data-i18n="contactBody">브랜드의 제품과 현재 단계를 알려주세요. 크리에이터 시딩, UGC 제작, Amazon 런칭 중 가장 적합한 실행 범위를 검토해 드립니다.</p>
+
+      <div class="launch-contact__promise">
+        <span>01</span>
+        <p data-i18n="contactPromise1">한 제품부터 시작할 수 있는 현실적인 실행안</p>
+        <span>02</span>
+        <p data-i18n="contactPromise2">미국 크리에이터 콘텐츠와 커머스를 연결한 제안</p>
+        <span>03</span>
+        <p data-i18n="contactPromise3">확대·수정·중단을 판단할 수 있는 명확한 다음 단계</p>
       </div>
-    </section>
+    </div>
+
+    <form class="launch-inquiry-form" id="lead-form" novalidate data-reveal>
+      <div class="launch-field launch-field--full">
+        <label for="inquiry-type"><span data-i18n="labelInquiryType">문의 유형</span> <b>*</b></label>
+        <select id="inquiry-type" name="inquiryType" required>
+          <option value="" selected disabled data-i18n="selectInquiryType">문의 유형 선택</option>
+          <option value="us-launch" data-i18n="inquiryUsLaunch">미국 런칭 통합</option>
+          <option value="export-voucher" data-i18n="inquiryExportVoucher">수출바우처 문의</option>
+          <option value="creator-seeding" data-i18n="inquiryCreator">크리에이터 시딩</option>
+          <option value="ugc-production" data-i18n="inquiryUgc">UGC 제작</option>
+          <option value="amazon-launch" data-i18n="inquiryAmazon">Amazon 런칭·운영</option>
+          <option value="market-validation" data-i18n="inquiryValidation">미국 시장 검증</option>
+          <option value="other" data-i18n="other">기타</option>
+        </select>
+      </div>
+
+      
+
+      <div class="launch-form-grid">
+        <div class="launch-field">
+          <label for="company-name"><span data-i18n="labelCompany">기업명</span> <b>*</b></label>
+          <input id="company-name" name="company" type="text" required data-placeholder-ko="기업명" data-placeholder-en="Company name" placeholder="기업명" />
+        </div>
+
+        <div class="launch-field">
+          <label for="brand-name"><span data-i18n="labelBrand">브랜드명</span> <b>*</b></label>
+          <input id="brand-name" name="brand" type="text" required data-placeholder-ko="브랜드명" data-placeholder-en="Brand name" placeholder="브랜드명" />
+        </div>
+
+        <div class="launch-field launch-field--full">
+          <label for="brand-url" data-i18n="labelUrl">웹사이트 URL (선택)</label>
+          <input id="brand-url" name="url" type="url" data-placeholder-ko="https://" data-placeholder-en="https://" placeholder="https://" />
+        </div>
+
+        <div class="launch-field">
+          <label for="contact-name"><span data-i18n="labelName">담당자 성함</span> <b>*</b></label>
+          <input id="contact-name" name="name" type="text" required data-placeholder-ko="담당자 성함" data-placeholder-en="Contact name" placeholder="담당자 성함" />
+        </div>
+
+        <div class="launch-field">
+          <label for="contact-phone"><span data-i18n="labelPhone">연락처</span> <b>*</b></label>
+          <input id="contact-phone" name="phone" type="tel" required data-placeholder-ko="010-0000-0000" data-placeholder-en="+1 000 000 0000" placeholder="010-0000-0000" />
+        </div>
+
+        <div class="launch-field launch-field--full">
+          <label for="contact-email"><span data-i18n="labelEmail">이메일</span> <b>*</b></label>
+          <input id="contact-email" name="email" type="email" required data-placeholder-ko="email@example.com" data-placeholder-en="email@example.com" placeholder="email@example.com" />
+        </div>
+      </div>
+
+      <fieldset class="launch-choice-group launch-field--full">
+        <legend><span data-i18n="labelCategory">업종 카테고리</span> <b>*</b></legend>
+        <div class="launch-chips">
+          <label><input type="radio" name="category" value="beauty" required checked /><span data-i18n="categoryBeauty">뷰티</span></label>
+          <label><input type="radio" name="category" value="fashion" required /><span data-i18n="categoryFashion">패션</span></label>
+          <label><input type="radio" name="category" value="food" required /><span>F&amp;B</span></label>
+          <label><input type="radio" name="category" value="lifestyle" required /><span data-i18n="categoryLifestyle">라이프스타일</span></label>
+          <label><input type="radio" name="category" value="tech" required /><span data-i18n="categoryTech">테크/IT</span></label>
+          <label><input type="radio" name="category" value="kids" required /><span data-i18n="categoryKids">키즈</span></label>
+          <label><input type="radio" name="category" value="travel" required /><span data-i18n="categoryTravel">여행/레저</span></label>
+          <label><input type="radio" name="category" value="other" required /><span data-i18n="other">기타</span></label>
+        </div>
+      </fieldset>
+
+      <div class="launch-field launch-field--full">
+        <label for="budget"><span data-i18n="labelBudget">예산</span> <b>*</b></label>
+        <select id="budget" name="budget" required>
+
+          <option value="" selected disabled data-i18n="selectBudget">예산 범위 선택</option>
+          <option value="under-1_5m" data-i18n="budget1">150만원 이하</option>
+          <option value="1_5m-3m" data-i18n="budget2">150~300만원</option>
+          <option value="3m-5m" data-i18n="budget3">300~500만원</option>
+          <option value="5m-10m" data-i18n="budget4">500~1,000만원</option>
+          <option value="10m-20m" data-i18n="budget5">1,000~2,000만원</option>
+          <option value="20m-30m" data-i18n="budget6">2,000~3,000만원</option>
+          <option value="30m-50m" data-i18n="budget7">3,000~5,000만원</option>
+          <option value="undecided" data-i18n="budgetUndecided">미정·상담 필요</option>
+        </select>
+      </div>
+
+      <div class="launch-field launch-field--full">
+        <label for="launch-goal"><span data-i18n="labelGoal">문의 내용</span> <b>*</b></label>
+        <textarea id="launch-goal" name="goal" rows="7" required data-placeholder-ko="제품, 목표 시장, 현재 준비 단계와 가장 궁금한 점을 자유롭게 적어주세요." data-placeholder-en="Tell us about your product, target market, launch stage, and what you want to validate." placeholder="제품, 목표 시장, 현재 준비 단계와 가장 궁금한 점을 자유롭게 적어주세요."></textarea>
+      </div>
+
+      <label class="launch-consent">
+        <input type="checkbox" name="consent" required />
+        <span data-i18n="consent">문의 검토와 후속 연락을 위해 입력한 정보를 저장하는 데 동의합니다.</span>
+      </label>
+
+      <button class="launch-submit" type="submit" data-i18n="submit">미국 런칭 문의 보내기 →</button>
+      <p class="form-message" role="status" aria-live="polite"></p>
+      <p class="launch-form-note" data-i18n="formNote">현재 로컬 MVP에서는 문의 내용이 이 브라우저에 저장됩니다. 공개 전 실제 이메일 수집 서비스를 연결해야 합니다.</p>
+    </form>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer"><div class="shell footer-inner"><div><strong>koaus</strong> — <span data-i18n="footerText">한국 브랜드의 미국 시장 검증과 론칭 실행.</span></div><div class="footer-links"><a href="#services" data-i18n="navServices">서비스</a><a href="#contact" data-i18n="navContact">문의하기</a><a href="https://www.instagram.com/koaus.shop" target="_blank" rel="noreferrer">Instagram</a></div></div></footer>
