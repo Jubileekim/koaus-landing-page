@@ -1,5 +1,7 @@
 # koaus Curated Shop
 
+[English](README.md) | [한국어](README.ko.md)
+
 A responsive static storefront and brand-validation experience for curated Korean stationery, desk goods, small gifts, and lifestyle products.
 
 The shared visual, typography, bilingual, responsive, and accessibility standards are documented in [`DESIGN.md`](DESIGN.md).
