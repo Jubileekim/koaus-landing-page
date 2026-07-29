@@ -38,7 +38,7 @@ koaus presents creator sourcing, UGC production, and commerce tracking as one co
 - UGC playback control outside the viewport and reduced-motion support
 - Package comparison, creator-rate, and add-on tabs
 - Package buttons that preselect the inquiry form and scroll to contact
-- Form validation including at least one validation goal
+- Required-field, email, and consent validation
 - Frontend MVP inquiry storage with `localStorage`
 - Export Voucher information page
 - Separate koaus shop, product, and about pages

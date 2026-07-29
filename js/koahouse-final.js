@@ -169,18 +169,6 @@
   "contactPromise1": "한 제품부터 시작할 수 있는 현실적인 실행 범위",
   "contactPromise2": "예산에 맞춘 크리에이터·UGC·커머스 구성",
   "contactPromise3": "확대·수정·중단을 판단할 수 있는 다음 단계",
-  "labelProductUrl": "제품 또는 브랜드 링크",
-  "labelPackage": "관심 패키지",
-  "planConsult": "상담 후 결정",
-  "planEvent": "첫 런칭 이벤트 · Validation",
-  "labelBudget": "예상 예산",
-  "budgetUndecided": "미정·상담 필요",
-  "budgetOver": "1,000만원 이상",
-  "labelValidationGoal": "이번 파일럿에서 가장 확인하고 싶은 내용",
-  "goalConsumer": "미국 소비자 반응",
-  "goalUgc": "미국용 UGC",
-  "goalPosting": "크리에이터 게시",
-  "goalConversion": "구매 전환 가능성",
   "labelGoalDetail": "추가로 알려주실 내용",
   "submitDiagnosis": "무료 30분 진단 신청하기 →"
 },
@@ -353,18 +341,6 @@
   "contactPromise1": "A practical scope that can start with one product",
   "contactPromise2": "A creator, UGC, and commerce setup matched to your budget",
   "contactPromise3": "A clear next step for scaling, refining, or stopping",
-  "labelProductUrl": "Product or brand URL",
-  "labelPackage": "Package of interest",
-  "planConsult": "Decide after consultation",
-  "planEvent": "First Launch Event · Validation",
-  "labelBudget": "Expected budget",
-  "budgetUndecided": "Undecided · consultation needed",
-  "budgetOver": "₩10M or more",
-  "labelValidationGoal": "What do you most want to validate in this pilot?",
-  "goalConsumer": "U.S. consumer response",
-  "goalUgc": "U.S.-market UGC",
-  "goalPosting": "Creator posting",
-  "goalConversion": "Purchase conversion potential",
   "labelGoalDetail": "Additional details",
   "submitDiagnosis": "Request a free 30-minute diagnosis →"
 }
@@ -427,61 +403,18 @@
     });
   });
 
-  const packageSelect = document.querySelector('#package-interest');
+  const selectedPlan = document.querySelector('#selected-plan');
   const inquirySelect = document.querySelector('#inquiry-type');
   const contactSection = document.querySelector('#contact');
+  const firstContactField = document.querySelector('#brand-name');
 
   document.querySelectorAll('.koaus-plan-select').forEach((button) => {
     button.addEventListener('click', () => {
-      const plan = button.dataset.plan;
-      if (packageSelect) packageSelect.value = plan;
+      if (selectedPlan) selectedPlan.value = button.dataset.plan || '';
       if (inquirySelect) inquirySelect.value = 'market-validation';
       contactSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      window.setTimeout(() => packageSelect?.focus({ preventScroll: true }), 650);
+      window.setTimeout(() => firstContactField?.focus({ preventScroll: true }), 650);
     });
   });
 
-  const leadForm = document.querySelector('#lead-form');
-  const validationGoals = [...document.querySelectorAll('input[name="validationGoal"]')];
-
-  const validateGoalGroup = () => {
-    if (!validationGoals.length) return true;
-    const selectedGoals = validationGoals.filter((input) => input.checked);
-    const valid = selectedGoals.length > 0;
-    const first = validationGoals[0];
-    const language = document.documentElement.lang === 'en' ? 'en' : 'ko';
-    first.setCustomValidity(
-      valid
-        ? ''
-        : language === 'en'
-          ? 'Select at least one goal you want to validate.'
-          : '확인하고 싶은 내용을 한 가지 이상 선택해 주세요.'
-    );
-
-    if (leadForm) {
-      let summary = leadForm.querySelector('input[name="validationGoals"]');
-      if (!summary) {
-        summary = document.createElement('input');
-        summary.type = 'hidden';
-        summary.name = 'validationGoals';
-        leadForm.append(summary);
-      }
-      summary.value = selectedGoals.map((input) => input.value).join(',');
-    }
-
-    return valid;
-  };
-
-  validationGoals.forEach((input) => input.addEventListener('change', validateGoalGroup));
-
-  leadForm?.addEventListener(
-    'submit',
-    (event) => {
-      if (validateGoalGroup()) return;
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      validationGoals[0]?.reportValidity();
-    },
-    true
-  );
 })();

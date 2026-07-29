@@ -345,12 +345,12 @@
 
         <div class="koaus-pricing-detail">
           <div class="koaus-detail-tabs" role="tablist" aria-label="가격 상세 정보">
-            <button class="koaus-detail-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="comparison-panel" id="comparison-tab" data-final-i18n="tabCompare">패키지 비교</button>
-            <button class="koaus-detail-tab" type="button" role="tab" aria-selected="false" aria-controls="rate-panel" id="rate-tab" data-final-i18n="tabRate">크리에이터 단가</button>
-            <button class="koaus-detail-tab" type="button" role="tab" aria-selected="false" aria-controls="option-panel" id="option-tab" data-final-i18n="tabOptions">추가 옵션</button>
+            <button class="koaus-detail-tab" type="button" role="tab" aria-selected="false" aria-controls="comparison-panel" id="comparison-tab" tabindex="-1" data-final-i18n="tabCompare">패키지 비교</button>
+            <button class="koaus-detail-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="rate-panel" id="rate-tab" tabindex="0" data-final-i18n="tabRate">크리에이터 단가</button>
+            <button class="koaus-detail-tab" type="button" role="tab" aria-selected="false" aria-controls="option-panel" id="option-tab" tabindex="-1" data-final-i18n="tabOptions">추가 옵션</button>
           </div>
 
-          <div class="koaus-tab-panel is-active" id="comparison-panel" role="tabpanel" aria-labelledby="comparison-tab">
+          <div class="koaus-tab-panel" id="comparison-panel" role="tabpanel" aria-labelledby="comparison-tab" hidden>
             <div class="koaus-table-scroll" tabindex="0">
               <table>
                 <thead><tr><th data-final-i18n="comparisonItem">비교 항목</th><th>Starter</th><th class="featured-column">Validation</th><th>Commerce</th></tr></thead>
@@ -369,7 +369,7 @@
             </div>
           </div>
 
-          <div class="koaus-tab-panel" id="rate-panel" role="tabpanel" aria-labelledby="rate-tab" hidden>
+          <div class="koaus-tab-panel is-active" id="rate-panel" role="tabpanel" aria-labelledby="rate-tab">
             <div class="koaus-table-scroll" tabindex="0">
               <table>
                 <thead><tr><th data-final-i18n="rateType">유형</th><th data-final-i18n="ratePurpose">활용 목적</th><th data-final-i18n="creatorCondition">크리에이터 조건</th><th data-final-i18n="minimumPeople">최소 인원</th><th data-final-i18n="ratePerPerson">단가 / 1인</th><th data-final-i18n="note">비고</th></tr></thead>
@@ -438,6 +438,7 @@
         </div>
 
         <form class="launch-inquiry-form" id="lead-form" novalidate data-reveal>
+          <input id="selected-plan" name="selectedPlan" type="hidden" value="" />
           <div class="launch-field launch-field--full">
             <label for="inquiry-type"><span data-i18n="labelInquiryType">문의 유형</span> <b>*</b></label>
             <select id="inquiry-type" name="inquiryType" required>
@@ -469,41 +470,7 @@
               <label for="contact-email"><span data-i18n="labelEmail">이메일</span> <b>*</b></label>
               <input id="contact-email" name="email" type="email" required data-placeholder-ko="email@example.com" data-placeholder-en="email@example.com" placeholder="email@example.com" autocomplete="email" />
             </div>
-            <div class="launch-field launch-field--full">
-              <label for="product-url"><span data-final-i18n="labelProductUrl">제품 또는 브랜드 링크</span></label>
-              <input id="product-url" name="productUrl" type="url" data-placeholder-ko="https://" data-placeholder-en="https://" placeholder="https://" />
-            </div>
-            <div class="launch-field">
-              <label for="package-interest"><span data-final-i18n="labelPackage">관심 패키지</span></label>
-              <select id="package-interest" name="plan">
-                <option value="consult" data-final-i18n="planConsult">상담 후 결정</option>
-                <option value="Starter" data-final-price-ko="Starter · 250만원" data-final-price-en="Starter · ₩2.5M">Starter · 250만원</option>
-                <option value="Validation" data-final-price-ko="Validation · 480만원" data-final-price-en="Validation · ₩4.8M">Validation · 480만원</option>
-                <option value="Commerce" data-final-price-ko="Commerce · 780만원" data-final-price-en="Commerce · ₩7.8M">Commerce · 780만원</option>
-                <option value="Validation - First Launch Event" data-final-i18n="planEvent">첫 런칭 이벤트 · Validation</option>
-              </select>
-            </div>
-            <div class="launch-field">
-              <label for="expected-budget"><span data-final-i18n="labelBudget">예상 예산</span></label>
-              <select id="expected-budget" name="budget">
-                <option value="undecided" data-final-i18n="budgetUndecided">미정·상담 필요</option>
-                <option value="150-300" data-final-price-ko="150–300만원" data-final-price-en="₩1.5M–₩3M">150–300만원</option>
-                <option value="300-500" data-final-price-ko="300–500만원" data-final-price-en="₩3M–₩5M">300–500만원</option>
-                <option value="500-1000" data-final-price-ko="500–1,000만원" data-final-price-en="₩5M–₩10M">500–1,000만원</option>
-                <option value="1000+" data-final-i18n="budgetOver">1,000만원 이상</option>
-              </select>
-            </div>
           </div>
-
-          <fieldset class="launch-choice-group">
-            <legend><span data-final-i18n="labelValidationGoal">이번 파일럿에서 가장 확인하고 싶은 내용</span> <b>*</b></legend>
-            <div class="launch-chips">
-              <label><input type="checkbox" name="validationGoal" value="consumer-response" /><span data-final-i18n="goalConsumer">미국 소비자 반응</span></label>
-              <label><input type="checkbox" name="validationGoal" value="ugc" /><span data-final-i18n="goalUgc">미국용 UGC</span></label>
-              <label><input type="checkbox" name="validationGoal" value="creator-posting" /><span data-final-i18n="goalPosting">크리에이터 게시</span></label>
-              <label><input type="checkbox" name="validationGoal" value="conversion" /><span data-final-i18n="goalConversion">구매 전환 가능성</span></label>
-            </div>
-          </fieldset>
 
           <div class="launch-field launch-field--full">
             <label for="launch-goal"><span data-final-i18n="labelGoalDetail">추가로 알려주실 내용</span> <b>*</b></label>
