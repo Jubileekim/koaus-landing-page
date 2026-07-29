@@ -1,121 +1,200 @@
-# Discover Korean lifestyle goods
+# koaus launch studio
+
+### Launch Korean brands in the U.S. with creators, content, and commerce.
 
 [English](README.md) | [한국어](README.ko.md)
 
-A responsive static storefront and brand-validation experience for curated Korean stationery, desk goods, small gifts, and lifestyle products.
+**A U.S. market-entry studio for Korean brands, connecting creator collaboration, UGC production, localized content, and commerce execution.**
 
-The shared visual, typography, bilingual, responsive, and accessibility standards are documented in [`DESIGN.md`](DESIGN.md).
+koaus launch studio is built for Korean brands that want to enter the U.S. market but need more than translation or one-off marketing. The studio connects brands with overseas creators, develops market-ready content, and turns early audience response into practical launch decisions.
 
-## Planning
+> **From Korean brand potential to real U.S. market signals.**
+>
+> We help brands test, learn, and launch through creators, content, and commerce.
 
-### Core value
+---
 
-- **Problem:** Global buyers struggle to discover small Korean lifestyle brands, while Korean makers have little evidence of U.S. demand before investing in inventory and logistics.
-- **Solution:** koaus curates promising products and lets global buyers save and vote before a full launch.
-- **Expected effect:** Buyers discover products earlier; brands validate product appeal, price sensitivity, and content angles with lower risk.
+## What is koaus launch studio?
 
-### Target users
+koaus launch studio is a brand-facing collaboration and market-entry platform for Korean companies preparing to expand into the United States.
 
-1. U.S. and English-speaking women aged 20–35 interested in K-culture, journaling, desk setups, and small gifts.
-2. Independent Korean lifestyle brands that want to test the U.S. market before committing to a full launch.
+The service is designed around a connected launch flow:
 
-### Core message and CTA
+- identify the brand's strongest U.S. positioning,
+- find relevant creators and build collaboration briefs,
+- produce English UGC and reusable marketing assets,
+- prepare Amazon and commerce-facing content,
+- and evaluate real market response before scaling.
 
-- Message: **Discover Korean lifestyle goods before everyone else.**
-- Buyer CTA: **Join the Launch List**
-- Brand CTA: **Request a Product Check**
+Rather than treating creator marketing, content production, and distribution as separate tasks, koaus organizes them into one launch system.
 
-### Wireframe
+---
+
+## Who it is for
+
+- Korean beauty, lifestyle, stationery, wellness, food, and consumer-product brands exploring the U.S. market
+- Early-stage brands that need market validation before committing to large inventory or advertising budgets
+- Established Korean brands that need English UGC, creator partnerships, and localized commerce assets
+- Brands considering Amazon, DTC, retail distribution, or Export Voucher-supported overseas expansion
+
+---
+
+## Core value
+
+| Brand challenge | koaus approach |
+|---|---|
+| Unclear U.S. positioning | Define target audience, message, and launch angle |
+| Difficulty finding relevant overseas creators | Source and organize creator collaboration candidates |
+| Lack of English-first content | Produce UGC, short-form video, briefs, and product storytelling |
+| Disconnected marketing and sales execution | Connect creator response with Amazon and commerce assets |
+| High risk before a full launch | Test response first, then decide whether to refine, scale, or stop |
+
+---
+
+## Service scope
+
+### 1. U.S. launch strategy
+
+- Brand and product diagnosis
+- U.S. audience and competitor review
+- Positioning, messaging, and campaign direction
+- Launch priorities and execution roadmap
+
+### 2. Creator collaboration
+
+- U.S. creator research and shortlist development
+- Product-to-creator matching
+- English outreach and collaboration briefs
+- Seeding, schedules, deliverables, and communication support
+
+### 3. UGC and localized content
+
+- English short-form UGC planning
+- Product demonstrations and review-style content
+- Reusable assets for social media, product pages, and ads
+- English copy and market-specific product storytelling
+
+### 4. Amazon and commerce launch
+
+- Amazon listing direction and English content structure
+- Product-page image and video planning
+- Creator content connected to commerce assets
+- Initial market-response and launch-readiness review
+
+### 5. Export Voucher support
+
+- Review of possible service alignment with Export Voucher categories
+- Consultation based on the brand's current selection status and needs
+- Preparation of creator, content, and U.S. launch execution scope
+
+> koaus does not claim official Export Voucher service-provider status unless registration and eligible scope are separately confirmed. Program eligibility, subsidy rates, and available services must be checked against the current official notice.
+
+---
+
+## Collaboration process
 
 ```text
-HOME
-Hero → Categories → Problem/Solution/Effect → Shop preview
-→ Real-life video routines → Lookbook → Brand Values → Final CTA
-                 ↓
-SHOP → FILTER / SEARCH / SORT → PRODUCT DETAIL
-                 ↓
-ABOUT / HOW IT WORKS
-Problem → Product Picks → 3-Step Process → For Brands
-→ Launch Fit Checker → Journal → Final CTA
+1. BRAND INQUIRY
+Product, goals, current market status, and budget
+        ↓
+2. LAUNCH DIAGNOSIS
+Audience, positioning, competitors, and priority channels
+        ↓
+3. CAMPAIGN DESIGN
+Creator profile, content direction, deliverables, and timeline
+        ↓
+4. EXECUTION
+Creator outreach, seeding, UGC production, and commerce assets
+        ↓
+5. VALIDATION
+Review response, content performance, and next launch decision
 ```
 
-## Run locally
+---
 
-No build step or package installation is required.
+## Website experience
 
-```bash
-python3 -m http.server 8000
+The current website prototype includes:
+
+- Korean and English language switching
+- UGC video-mosaic hero section
+- Brand-facing service and process presentation
+- U.S. launch inquiry form
+- Export Voucher inquiry type and information page
+- Responsive desktop and mobile layouts
+- Navigation to the separate consumer-facing `koaus shop`
+- Local browser storage for prototype inquiry submissions
+
+---
+
+## koaus ecosystem
+
+### koaus launch studio
+
+A B2B service for Korean brands entering the U.S. through creators, localized content, and commerce execution.
+
+### koaus shop
+
+A consumer-facing storefront for overseas shoppers discovering Korean lifestyle products. It also gives partner brands a visual example of how their products could appear in a global shopping environment.
+
+The two products serve different users but support the same market-entry system:
+
+```text
+KOREAN BRAND
+        ↓
+KOAUS LAUNCH STUDIO
+Strategy → Creators → UGC → Commerce preparation
+        ↓
+KOAUS SHOP / U.S. CHANNELS
+Consumer discovery → Response → Sales validation
 ```
 
-Then open `http://localhost:8000`.
+---
 
 ## Project structure
 
 ```text
 .
 ├── index.html
-├── about.html
-├── shop.html
-├── product.html
+├── export-voucher.html
 ├── css/
-│   ├── style.css
-│   ├── about.css
-│   └── store.css
+│   └── koahouse-v2.css
 ├── js/
-│   ├── catalog.js
-│   ├── i18n.js
-│   ├── main.js
-│   ├── about.js
-│   ├── shop.js
-│   └── product.js
-├── images/
-│   ├── koaus-hero-collection.jpg
-│   ├── product-*.jpg
-│   └── README.md
+│   └── koahouse.js
 ├── videos/
-│   └── ugc-*.mp4
-└── README.md
+│   └── hero/
+├── README.md
+└── README.ko.md
 ```
 
-## Included interactions
+---
 
-- Editorial homepage with a three-product shop preview
-- Dedicated shop catalog with URL-based category filters, live search, sorting, saved-only view, and responsive layouts
-- Dedicated product detail URLs with related picks, source transparency, saving, and pre-order-interest feedback
-- 29CM- and Ohouse-referenced sample products with original KRW and converted USD prices
-- Muted, looping, inline autoplay video routines with optional sound controls
-- Category-relevant real-life footage on product pages
-- Site-wide English/Korean language toggle persisted with `localStorage`
-- Korean translations for static pages, dynamically rendered product cards, form feedback, and product-check results
-- Saved products persisted with `localStorage`
-- Prototype launch-list and brand-check submissions persisted with `localStorage`
-- Saved-picks drawer
-- In-card voting feedback
-- Accessible launch-list modal
-- Complete product-check request modal
-- Separate `about.html` detail page with the original story, process, brand content, and Launch Fit calculator
-- Keyboard focus management and Escape-to-close behavior
-- Intersection Observer reveal animations with reduced-motion support
+## Run locally
 
-## Sample product data
+No package installation or build process is required.
 
-The featured products are educational MVP references selected from 29CM and Ohouse product listings on July 27, 2026.
+```bash
+python3 -m http.server 8000
+```
 
-- Conversion reference: approximately **₩1,461 = $1**, derived from the ECB EUR/KRW and EUR/USD reference rates published July 24, 2026.
-- USD values are simple rounded conversions of the listed KRW prices.
-- Shipping, duties, payment fees, and launch markup are not included.
-- Product names, photographs, and trademarks belong to their respective brands and sellers.
-- Each card links to its original 29CM or Ohouse listing. These references are not presented as current koaus inventory or authorized resale listings.
+Then open:
 
-## Static deployment
+```text
+http://localhost:8000
+```
 
-This folder can be deployed directly to Vercel as a static site:
+---
 
-1. Import the repository or upload the project.
-2. Leave the framework preset as **Other**.
-3. Do not set a build command.
-4. Use the project root as the output directory.
+## MVP notes
 
-The forms and pre-order interest tools are frontend MVP interactions stored in the visitor's browser. They do not submit to a backend yet.
+This repository currently represents a front-end service prototype.
 
-The current real-life clips are Pexels stock footage used as permission-clear MVP stand-ins and linked to their creators on the page. They are not presented as koaus customer submissions. Replace them with customer-created UGC only after obtaining contributor consent and the necessary usage rights.
+- Inquiry submissions are stored in the visitor's browser and are not yet connected to a production database or email system.
+- Creator network size, campaign results, and brand case studies should not be presented as verified performance until real projects are completed.
+- Demo UGC and media assets must have appropriate usage rights before public or commercial deployment.
+- Export Voucher eligibility and provider status must be confirmed through the official program and current notices.
+- Service scope, pricing, deliverables, and usage rights should be defined separately for each brand collaboration.
+
+---
+
+### Built for Korean brands ready to test, prove, and launch in the U.S.
