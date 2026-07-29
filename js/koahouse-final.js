@@ -1,0 +1,487 @@
+(() => {
+  const finalCopy = {
+    ko: {
+  "navPricing": "가격 안내",
+  "insightStripTitle": "큰 론칭 전에, 작은 시장 신호부터 확인하세요.",
+  "insightStripBody": "미국 크리에이터 반응과 UGC, 클릭·구매 데이터를 먼저 확인한 뒤 다음 투자를 결정합니다.",
+  "problemKicker": "미국 진출의 불확실성",
+  "problemTitle": "미국에 진출하는 것보다,<br/>미국에서 통할 근거를 찾는 일이 먼저입니다.",
+  "problemBody": "누가 사고, 어떤 콘텐츠에 반응하며, 실제 구매로 이어질지 모르는 상태에서 재고·광고·물류비부터 투입하는 것이 가장 큰 위험입니다.",
+  "problem1Title": "누가 우리 제품을 살지 모릅니다.",
+  "problem1Body": "미국의 어떤 고객층이 제품에 관심을 보이고 구매 이유를 느끼는지 확인하기 어렵습니다.",
+  "problem2Title": "어떤 콘텐츠가 통할지 모릅니다.",
+  "problem2Body": "한국에서 쓰던 메시지와 표현이 미국 소비자의 관심과 신뢰를 만들지는 별개의 문제입니다.",
+  "problem3Title": "관심이 구매로 이어질지 모릅니다.",
+  "problem3Body": "조회와 좋아요가 실제 클릭·쿠폰 사용·주문으로 연결되는지 확인하기 전에 비용이 먼저 들어갑니다.",
+  "solutionKicker": "KOAUS SOLUTION",
+  "solutionTitle": "미국 시장 진출을<br/>하나의 작은 실험으로.",
+  "solutionBody": "Koaus가 브랜드와 맞는 미국 크리에이터를 선별하고, UGC 제작부터 실제 게시와 구매 추적까지 하나의 파일럿으로 운영합니다.",
+  "service1Title": "제품과 고객에 맞는 미국 크리에이터를 선별합니다.",
+  "service1a": "제품·카테고리 적합도 검토",
+  "service1b": "미국 크리에이터 후보 선별",
+  "service1c": "영문 브리프와 커뮤니케이션",
+  "service1d": "배송·일정·납품 관리",
+  "service2Title": "미국 소비자의 언어와 시선으로 콘텐츠를 만듭니다.",
+  "service2a": "제품 사용·시연 숏폼",
+  "service2b": "후킹과 메시지별 콘텐츠",
+  "service2c": "브랜드 채널 활용 소재",
+  "service2d": "사용권·원본 파일 옵션",
+  "service3Title": "클릭·쿠폰·주문 데이터를 통해 구매 가능성을 확인합니다.",
+  "service3a": "추적 링크와 쿠폰 설정",
+  "service3b": "콘텐츠별 반응 비교",
+  "service3c": "초기 구매 신호 확인",
+  "service3d": "확대·수정·중단 권고안",
+  "processKicker": "HOW IT WORKS",
+  "processTitle": "제품 하나로 시작해,<br/>데이터로 다음을 결정합니다.",
+  "processBody": "처음부터 많은 SKU와 예산을 투입하지 않습니다. 하나의 제품과 명확한 가설로 시작합니다.",
+  "step1Title": "브랜드·제품 진단",
+  "step1Body": "제품, 가격, 타깃 고객, 현재 판매 준비도와 이번 파일럿에서 확인할 가설을 정리합니다.",
+  "step2Title": "크리에이터 매칭",
+  "step2Body": "팔로워 수보다 제품과 콘텐츠 적합도가 높은 미국 크리에이터를 선별합니다.",
+  "step3Title": "파일럿 실행",
+  "step3Body": "제품 발송, 영문 가이드, UGC 제작, 계정 게시와 추적 링크 운영을 관리합니다.",
+  "step4Title": "반응 측정과 다음 결정",
+  "step4Body": "콘텐츠 반응과 구매 신호를 분석해 확대·수정·중단을 위한 다음 실행안을 제안합니다.",
+  "resultsKicker": "RESULTS & METRICS",
+  "resultsTitle": "콘텐츠 개수가 아니라,<br/>다음 결정을 위한 지표를 남깁니다.",
+  "resultsBody": "캠페인이 끝난 뒤 단순한 조회수만 남기지 않습니다. 콘텐츠, 고객 반응, 구매 신호를 구분해 무엇을 계속하고 무엇을 바꿔야 하는지 정리합니다.",
+  "metricContent": "포맷·훅·메시지·납품 현황",
+  "metricAudience": "조회·저장·댓글·소비자 질문",
+  "metricCommerce": "링크 클릭·쿠폰·주문 신호",
+  "metricDecision": "확대·수정·중단 권고안",
+  "dashboardInsight": "일상 루틴형 콘텐츠의 저장과 제품 질문이 가장 높았습니다.",
+  "dashboardNext": "NEXT · 광고용 훅 2종 추가 테스트",
+  "dashboardDisclaimer": "표시된 수치는 화면 설명을 위한 예시 데이터입니다.",
+  "pricingKicker": "PRICING · U.S. PILOT",
+  "pricingTitle": "미국 파일럿 패키지.",
+  "pricingBody": "브랜드의 현재 단계와 검증 목적에 따라 가장 작은 반응 테스트부터 실제 구매 가능성 확인까지 선택할 수 있습니다.",
+  "starterTitle": "초기 미국 반응 테스트",
+  "starterDesc": "콘텐츠 반응을 가볍게 확인하는 첫 테스트",
+  "tenThousandWon": "만원",
+  "vatExcluded": "VAT 별도",
+  "starterPerPerson": "미국 크리에이터 5명 · 약 50만원 / 1인",
+  "starter1": "브랜드·제품 진단 1회",
+  "starter2": "미국 크리에이터 5명",
+  "starter3": "계정 게시 5건",
+  "starter4": "기본 반응 리포트",
+  "starter5": "운영 기간 약 4주",
+  "starterCta": "이 플랜으로 시작하기",
+  "popularPlan": "처음 시작하기 좋은 플랜",
+  "validationTitle": "미국 시장 검증 파일럿",
+  "validationDesc": "고객·메시지·콘텐츠 반응을 비교하는 핵심 패키지",
+  "validationPerPerson": "미국 크리에이터 8명 · 약 60만원 / 1인",
+  "validation1": "미국 크리에이터 8명",
+  "validation2": "게시 콘텐츠 8건",
+  "validation3": "UGC 소재 확보",
+  "validation4": "링크·쿠폰 추적",
+  "validation5": "반응 비교 리포트",
+  "validation6": "전략 미팅 1회",
+  "validationCta": "추천 플랜 신청하기",
+  "commerceTitle": "미국 구매 가능성 검증",
+  "commerceDesc": "클릭과 주문 신호까지 확인하는 심화 파일럿",
+  "commercePerPerson": "미국 크리에이터 12명 · 약 65만원 / 1인",
+  "commerce1": "커머스형 크리에이터 12명",
+  "commerce2": "게시 콘텐츠 12건",
+  "commerce3": "UGC 소재 확보",
+  "commerce4": "클릭·구매 추적",
+  "commerce5": "심화 시장 리포트",
+  "commerce6": "전략 미팅 2회",
+  "commerceCta": "구매 검증 상담하기",
+  "tabCompare": "패키지 비교",
+  "tabRate": "크리에이터 단가",
+  "tabOptions": "추가 옵션",
+  "comparisonItem": "비교 항목",
+  "totalPackagePrice": "총 패키지 금액",
+  "usCreators": "미국 크리에이터",
+  "postedContent": "게시 콘텐츠",
+  "ugcAssets": "UGC 소재 확보",
+  "basic": "기본",
+  "included": "포함",
+  "linkCouponTracking": "링크·쿠폰 추적",
+  "purchaseSignal": "구매 신호 확인",
+  "limited": "제한적",
+  "resultReport": "결과 리포트",
+  "comparative": "비교형",
+  "advanced": "심화형",
+  "strategyMeeting": "전략 미팅",
+  "once": "1회",
+  "twice": "2회",
+  "operationPeriod": "운영 기간",
+  "fourWeeks": "약 4주",
+  "fiveSixWeeks": "약 5–6주",
+  "sixEightWeeks": "약 6–8주",
+  "rateType": "유형",
+  "ratePurpose": "활용 목적",
+  "creatorCondition": "크리에이터 조건",
+  "minimumPeople": "최소 인원",
+  "ratePerPerson": "단가 / 1인",
+  "note": "비고",
+  "ugcPurpose": "브랜드 채널용 UGC",
+  "ugcCreatorType": "미국 UGC 제작형",
+  "noPosting": "계정 게시 없음",
+  "initialResponseTest": "초기 반응 테스트",
+  "followers": "팔로워",
+  "onePost": "게시 1건",
+  "targetResponseValidation": "타깃 반응 검증",
+  "categoryFitNano": "카테고리 적합 1K–10K",
+  "postBasicReport": "게시 + 기본 리포트",
+  "reachTrust": "도달·신뢰 확보",
+  "variesCategory": "카테고리별 변동",
+  "clickPurchaseTest": "클릭·구매 테스트",
+  "purchaseCreator": "구매 유도형",
+  "performanceFee": "성과 수수료 별도",
+  "brandCustom": "브랜드 맞춤형",
+  "professionalCreator": "50K+ 또는 전문 분야",
+  "consultation": "협의",
+  "customQuote": "별도 견적",
+  "rightsChannels": "권리·채널 협의",
+  "adRights3": "광고 사용권 3개월",
+  "from150k": "15만원부터",
+  "perCreator": "크리에이터 1인",
+  "adRights6": "광고 사용권 6개월",
+  "from250k": "25만원부터",
+  "rawVideo": "원본 영상 파일",
+  "from100k": "10만원부터",
+  "perContent": "콘텐츠 1건",
+  "extraHook": "추가 훅·버전 제작",
+  "from50k": "5만원부터",
+  "extraStory": "스토리 추가 게시",
+  "from80k": "8만원부터",
+  "commerceFee": "커머스 성과 수수료",
+  "orderSales": "주문 매출 기준",
+  "pricingNote": "모든 금액은 VAT 별도입니다. 제품 제공비, 한국→미국 배송비, 관세, 광고 집행비는 포함되지 않습니다. 크리에이터 규모·카테고리·콘텐츠 난이도·사용권 조건에 따라 최종 견적은 달라질 수 있습니다. 본 가격은 과제용 MVP 가안입니다.",
+  "eventLead": "미국 시장 테스트가 처음이신가요?",
+  "eventTitle": "첫 파트너 혜택으로<br/>더 가볍게 시작해보세요.",
+  "eventBody": "선착순 3개 브랜드에 추천 패키지 할인과 미국 시장 사전 진단 혜택을 제공합니다.",
+  "eventCta": "신규 혜택 받기",
+  "eventCardTitle": "첫 런칭 파트너 20% 할인",
+  "event1": "미국 크리에이터 8명",
+  "event2": "게시 콘텐츠 8건",
+  "event3": "UGC 소재 확보",
+  "event4": "링크·쿠폰 추적",
+  "event5": "반응 비교 리포트",
+  "event6": "미국 시장 진단 1회",
+  "event7": "전략 미팅 1회",
+  "event8": "후보군 추가 제안",
+  "eventNote": "프로모션 조건과 외부 실비 포함 여부는 상담 후 최종 견적에서 확인됩니다.",
+  "contactTitle": "우리 브랜드도<br/>미국에서 될지,<br/>이제 추측하지 마세요.",
+  "contactBody": "제품 하나와 확인하고 싶은 가설을 알려주세요. Koaus가 브랜드의 현재 단계와 예산에 맞춰 가장 작은 미국 시장 검증 방식부터 제안합니다.",
+  "contactPromise1": "한 제품부터 시작할 수 있는 현실적인 실행 범위",
+  "contactPromise2": "예산에 맞춘 크리에이터·UGC·커머스 구성",
+  "contactPromise3": "확대·수정·중단을 판단할 수 있는 다음 단계",
+  "labelProductUrl": "제품 또는 브랜드 링크",
+  "labelPackage": "관심 패키지",
+  "planConsult": "상담 후 결정",
+  "planEvent": "첫 런칭 이벤트 · Validation",
+  "labelBudget": "예상 예산",
+  "budgetUndecided": "미정·상담 필요",
+  "budgetOver": "1,000만원 이상",
+  "labelValidationGoal": "이번 파일럿에서 가장 확인하고 싶은 내용",
+  "goalConsumer": "미국 소비자 반응",
+  "goalUgc": "미국용 UGC",
+  "goalPosting": "크리에이터 게시",
+  "goalConversion": "구매 전환 가능성",
+  "labelGoalDetail": "추가로 알려주실 내용",
+  "submitDiagnosis": "무료 30분 진단 신청하기 →"
+},
+    en: {
+  "navPricing": "Pricing",
+  "insightStripTitle": "Before a full launch, find the first market signal.",
+  "insightStripBody": "Test U.S. creator response, UGC, clicks, and purchase signals before deciding where to invest next.",
+  "problemKicker": "U.S. MARKET UNCERTAINTY",
+  "problemTitle": "Before entering the U.S.,<br />find evidence that your brand can work there.",
+  "problemBody": "The greatest risk is committing inventory, advertising, and logistics costs before knowing who will buy, what content will work, and whether interest can convert.",
+  "problem1Title": "You do not yet know who will buy.",
+  "problem1Body": "It is difficult to know which U.S. customer segment will care about the product and understand its reason to buy.",
+  "problem2Title": "You do not yet know which content will work.",
+  "problem2Body": "Messaging that works in Korea does not automatically create attention and trust with U.S. consumers.",
+  "problem3Title": "You do not yet know whether interest will convert.",
+  "problem3Body": "Inventory and campaign costs arrive before views and likes can be proven to produce clicks, coupon use, or orders.",
+  "solutionKicker": "KOAUS SOLUTION",
+  "solutionTitle": "Turn U.S. market entry<br />into one focused experiment.",
+  "solutionBody": "Koaus selects U.S. creators that fit the brand and manages one connected pilot—from UGC production and posting to commerce tracking.",
+  "service1Title": "Select U.S. creators that fit the product and customer.",
+  "service1a": "Product and category-fit review",
+  "service1b": "U.S. creator shortlist",
+  "service1c": "English brief and communication",
+  "service1d": "Shipping, schedule, and delivery management",
+  "service2Title": "Create content through a U.S. consumer lens.",
+  "service2a": "Product-use and demonstration shorts",
+  "service2b": "Content by hook and message",
+  "service2c": "Assets for brand-owned channels",
+  "service2d": "Usage-right and raw-file options",
+  "service3Title": "Use clicks, coupons, and order data to test purchase potential.",
+  "service3a": "Tracked links and coupon setup",
+  "service3b": "Content-response comparison",
+  "service3c": "Early purchase-signal review",
+  "service3d": "Scale, refine, or stop recommendation",
+  "processKicker": "HOW IT WORKS",
+  "processTitle": "Start with one product.<br />Use data to decide what comes next.",
+  "processBody": "You do not need to begin with many SKUs or a large budget. Start with one product and one clear hypothesis.",
+  "step1Title": "Brand and product diagnosis",
+  "step1Body": "Define the product, price, target customer, sales readiness, and the hypothesis the pilot needs to test.",
+  "step2Title": "Creator matching",
+  "step2Body": "Select U.S. creators for product and content fit rather than follower count alone.",
+  "step3Title": "Pilot launch",
+  "step3Body": "Manage product shipping, the English brief, UGC production, creator posting, and tracked links.",
+  "step4Title": "Measure and decide",
+  "step4Body": "Analyze content response and purchase signals, then recommend whether to scale, refine, or stop.",
+  "resultsKicker": "RESULTS & METRICS",
+  "resultsTitle": "Not just more content.<br />Evidence for the next decision.",
+  "resultsBody": "The pilot does not end with a view count. We separate content performance, audience response, and commerce signals to show what should continue and what should change.",
+  "metricContent": "Formats, hooks, messages, and delivery status",
+  "metricAudience": "Views, saves, comments, and consumer questions",
+  "metricCommerce": "Link clicks, coupons, and order signals",
+  "metricDecision": "Scale, refine, or stop recommendation",
+  "dashboardInsight": "Daily-routine content produced the strongest saves and product questions.",
+  "dashboardNext": "NEXT · Test two additional ad hooks",
+  "dashboardDisclaimer": "Figures shown are sample data for interface demonstration only.",
+  "pricingKicker": "PRICING · U.S. PILOT",
+  "pricingTitle": "U.S. pilot packages.",
+  "pricingBody": "Choose the level of validation that fits your current stage—from a small response test to a deeper purchase-potential pilot.",
+  "starterTitle": "Initial U.S. response test",
+  "starterDesc": "A first test to check basic content response",
+  "tenThousandWon": "× ₩10K",
+  "vatExcluded": "VAT excluded",
+  "starterPerPerson": "5 U.S. creators · approx. ₩500K per creator",
+  "starter1": "One brand and product diagnosis",
+  "starter2": "5 U.S. creators",
+  "starter3": "5 creator posts",
+  "starter4": "Basic response report",
+  "starter5": "Approx. 4-week operation",
+  "starterCta": "Start with this plan",
+  "popularPlan": "Recommended first pilot",
+  "validationTitle": "U.S. market validation pilot",
+  "validationDesc": "Compare customer, message, and content response",
+  "validationPerPerson": "8 U.S. creators · approx. ₩600K per creator",
+  "validation1": "8 U.S. creators",
+  "validation2": "8 published contents",
+  "validation3": "Reusable UGC assets",
+  "validation4": "Link and coupon tracking",
+  "validation5": "Comparative response report",
+  "validation6": "One strategy meeting",
+  "validationCta": "Apply for recommended plan",
+  "commerceTitle": "U.S. purchase-potential pilot",
+  "commerceDesc": "A deeper pilot that tracks clicks and order signals",
+  "commercePerPerson": "12 U.S. creators · approx. ₩650K per creator",
+  "commerce1": "12 commerce-oriented creators",
+  "commerce2": "12 published contents",
+  "commerce3": "Reusable UGC assets",
+  "commerce4": "Click and purchase tracking",
+  "commerce5": "Advanced market report",
+  "commerce6": "Two strategy meetings",
+  "commerceCta": "Discuss a commerce pilot",
+  "tabCompare": "Package comparison",
+  "tabRate": "Creator rates",
+  "tabOptions": "Add-ons",
+  "comparisonItem": "Comparison item",
+  "totalPackagePrice": "Total package price",
+  "usCreators": "U.S. creators",
+  "postedContent": "Published content",
+  "ugcAssets": "UGC assets",
+  "basic": "Basic",
+  "included": "Included",
+  "linkCouponTracking": "Link and coupon tracking",
+  "purchaseSignal": "Purchase-signal review",
+  "limited": "Limited",
+  "resultReport": "Result report",
+  "comparative": "Comparative",
+  "advanced": "Advanced",
+  "strategyMeeting": "Strategy meeting",
+  "once": "1 session",
+  "twice": "2 sessions",
+  "operationPeriod": "Operation period",
+  "fourWeeks": "Approx. 4 weeks",
+  "fiveSixWeeks": "Approx. 5–6 weeks",
+  "sixEightWeeks": "Approx. 6–8 weeks",
+  "rateType": "Type",
+  "ratePurpose": "Purpose",
+  "creatorCondition": "Creator criteria",
+  "minimumPeople": "Minimum",
+  "ratePerPerson": "Rate / creator",
+  "note": "Notes",
+  "ugcPurpose": "UGC for brand-owned channels",
+  "ugcCreatorType": "U.S. UGC creator",
+  "noPosting": "No account posting",
+  "initialResponseTest": "Initial response test",
+  "followers": "followers",
+  "onePost": "1 post",
+  "targetResponseValidation": "Target-audience validation",
+  "categoryFitNano": "Category-fit, 1K–10K",
+  "postBasicReport": "Post + basic report",
+  "reachTrust": "Reach and trust",
+  "variesCategory": "Varies by category",
+  "clickPurchaseTest": "Click and purchase test",
+  "purchaseCreator": "Conversion-oriented creator",
+  "performanceFee": "Performance fee separate",
+  "brandCustom": "Brand-specific program",
+  "professionalCreator": "50K+ or specialist niche",
+  "consultation": "Consultation",
+  "customQuote": "Custom quote",
+  "rightsChannels": "Rights and channels agreed separately",
+  "adRights3": "3-month paid-ad rights",
+  "from150k": "From ₩150K",
+  "perCreator": "Per creator",
+  "adRights6": "6-month paid-ad rights",
+  "from250k": "From ₩250K",
+  "rawVideo": "Raw video file",
+  "from100k": "From ₩100K",
+  "perContent": "Per content item",
+  "extraHook": "Additional hook or version",
+  "from50k": "From ₩50K",
+  "extraStory": "Additional story post",
+  "from80k": "From ₩80K",
+  "commerceFee": "Commerce performance fee",
+  "orderSales": "Based on order revenue",
+  "pricingNote": "All prices exclude VAT. Product cost, Korea-to-U.S. shipping, customs duties, and paid-media spend are not included. Final quotations may vary by creator size, category, production difficulty, and usage rights. Prices shown are an MVP proposal for this assignment.",
+  "eventLead": "Is this your first U.S. market test?",
+  "eventTitle": "Start lighter<br />with founding-partner benefits.",
+  "eventBody": "The first three brands receive a recommended-package discount and a pre-pilot U.S. market diagnosis.",
+  "eventCta": "Claim the launch benefit",
+  "eventCardTitle": "20% founding-pilot discount",
+  "event1": "8 U.S. creators",
+  "event2": "8 published contents",
+  "event3": "Reusable UGC assets",
+  "event4": "Link and coupon tracking",
+  "event5": "Comparative response report",
+  "event6": "One U.S. market diagnosis",
+  "event7": "One strategy meeting",
+  "event8": "Additional creator candidates",
+  "eventNote": "Promotion conditions and the inclusion of external pass-through costs are confirmed in the final quotation.",
+  "contactTitle": "Could your brand<br />work in the U.S.?<br />Stop guessing.",
+  "contactBody": "Tell us about one product and the hypothesis you want to test. Koaus will recommend the smallest U.S. validation approach that fits your current stage and budget.",
+  "contactPromise1": "A practical scope that can start with one product",
+  "contactPromise2": "A creator, UGC, and commerce setup matched to your budget",
+  "contactPromise3": "A clear next step for scaling, refining, or stopping",
+  "labelProductUrl": "Product or brand URL",
+  "labelPackage": "Package of interest",
+  "planConsult": "Decide after consultation",
+  "planEvent": "First Launch Event · Validation",
+  "labelBudget": "Expected budget",
+  "budgetUndecided": "Undecided · consultation needed",
+  "budgetOver": "₩10M or more",
+  "labelValidationGoal": "What do you most want to validate in this pilot?",
+  "goalConsumer": "U.S. consumer response",
+  "goalUgc": "U.S.-market UGC",
+  "goalPosting": "Creator posting",
+  "goalConversion": "Purchase conversion potential",
+  "labelGoalDetail": "Additional details",
+  "submitDiagnosis": "Request a free 30-minute diagnosis →"
+}
+  };
+
+  const applyFinalLanguage = (language) => {
+    const lang = language === 'en' ? 'en' : 'ko';
+    document.querySelectorAll('[data-final-i18n]').forEach((element) => {
+      const value = finalCopy[lang][element.dataset.finalI18n];
+      if (value !== undefined) element.innerHTML = value;
+    });
+
+    document.querySelectorAll('[data-final-price-ko]').forEach((element) => {
+      element.textContent =
+        lang === 'en' ? element.dataset.finalPriceEn : element.dataset.finalPriceKo;
+    });
+  };
+
+  document.querySelectorAll('[data-language]').forEach((button) => {
+    button.addEventListener('click', () => applyFinalLanguage(button.dataset.language));
+  });
+
+  new MutationObserver(() => applyFinalLanguage(document.documentElement.lang)).observe(
+    document.documentElement,
+    { attributes: true, attributeFilter: ['lang'] }
+  );
+
+  applyFinalLanguage(document.documentElement.lang);
+
+  const tabs = [...document.querySelectorAll('.koaus-detail-tab')];
+  const panels = [...document.querySelectorAll('.koaus-tab-panel')];
+
+  const activateTab = (tab) => {
+    tabs.forEach((item) => {
+      const active = item === tab;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-selected', String(active));
+      item.tabIndex = active ? 0 : -1;
+    });
+
+    panels.forEach((panel) => {
+      const active = panel.id === tab.getAttribute('aria-controls');
+      panel.hidden = !active;
+      panel.classList.toggle('is-active', active);
+    });
+  };
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activateTab(tab));
+    tab.addEventListener('keydown', (event) => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      let nextIndex = index;
+      if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') nextIndex = 0;
+      if (event.key === 'End') nextIndex = tabs.length - 1;
+      activateTab(tabs[nextIndex]);
+      tabs[nextIndex].focus();
+    });
+  });
+
+  const packageSelect = document.querySelector('#package-interest');
+  const inquirySelect = document.querySelector('#inquiry-type');
+  const contactSection = document.querySelector('#contact');
+
+  document.querySelectorAll('.koaus-plan-select').forEach((button) => {
+    button.addEventListener('click', () => {
+      const plan = button.dataset.plan;
+      if (packageSelect) packageSelect.value = plan;
+      if (inquirySelect) inquirySelect.value = 'market-validation';
+      contactSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.setTimeout(() => packageSelect?.focus({ preventScroll: true }), 650);
+    });
+  });
+
+  const leadForm = document.querySelector('#lead-form');
+  const validationGoals = [...document.querySelectorAll('input[name="validationGoal"]')];
+
+  const validateGoalGroup = () => {
+    if (!validationGoals.length) return true;
+    const selectedGoals = validationGoals.filter((input) => input.checked);
+    const valid = selectedGoals.length > 0;
+    const first = validationGoals[0];
+    const language = document.documentElement.lang === 'en' ? 'en' : 'ko';
+    first.setCustomValidity(
+      valid
+        ? ''
+        : language === 'en'
+          ? 'Select at least one goal you want to validate.'
+          : '확인하고 싶은 내용을 한 가지 이상 선택해 주세요.'
+    );
+
+    if (leadForm) {
+      let summary = leadForm.querySelector('input[name="validationGoals"]');
+      if (!summary) {
+        summary = document.createElement('input');
+        summary.type = 'hidden';
+        summary.name = 'validationGoals';
+        leadForm.append(summary);
+      }
+      summary.value = selectedGoals.map((input) => input.value).join(',');
+    }
+
+    return valid;
+  };
+
+  validationGoals.forEach((input) => input.addEventListener('change', validateGoalGroup));
+
+  leadForm?.addEventListener(
+    'submit',
+    (event) => {
+      if (validateGoalGroup()) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      validationGoals[0]?.reportValidity();
+    },
+    true
+  );
+})();

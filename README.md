@@ -1,121 +1,101 @@
-# Discover Korean lifestyle goods
+# koaus launch studio
 
 [English](README.md) | [한국어](README.ko.md)
 
-A responsive static storefront and brand-validation experience for curated Korean stationery, desk goods, small gifts, and lifestyle products.
+**A responsive B2B landing page that helps Korean brands validate U.S. market potential through creator, UGC, and commerce pilots.**
 
-The shared visual, typography, bilingual, responsive, and accessibility standards are documented in [`DESIGN.md`](DESIGN.md).
+> Test for an early market signal before committing major inventory and budget.
 
-## Planning
+## Project objective
 
-### Core value
+The experience is designed for emerging Korean brands that need evidence before a larger U.S. launch:
 
-- **Problem:** Global buyers struggle to discover small Korean lifestyle brands, while Korean makers have little evidence of U.S. demand before investing in inventory and logistics.
-- **Solution:** koaus curates promising products and lets global buyers save and vote before a full launch.
-- **Expected effect:** Buyers discover products earlier; brands validate product appeal, price sensitivity, and content angles with lower risk.
+- Which U.S. customers respond to the product?
+- Which messages and content formats create attention and trust?
+- Can views and interest turn into clicks, coupon use, or purchase signals?
+- Should the brand scale, refine, or stop the next investment?
 
-### Target users
+koaus presents creator sourcing, UGC production, and commerce tracking as one connected validation flow rather than separate services.
 
-1. U.S. and English-speaking women aged 20–35 interested in K-culture, journaling, desk setups, and small gifts.
-2. Independent Korean lifestyle brands that want to test the U.S. market before committing to a full launch.
+## Main page structure
 
-### Core message and CTA
+1. **UGC video-mosaic hero** — U.S. market-validation message
+2. **Problem** — customer, content, and commerce uncertainty
+3. **Solution** — Creator · UGC · Commerce modules
+4. **How It Works** — Diagnose → Match → Launch → Measure
+5. **Results & Metrics** — content, audience, commerce, and decision signals
+6. **Pricing** — Starter / Validation / Commerce packages
+7. **Rate Card & Add-ons** — per-creator guide rates and optional rights
+8. **First Launch Event** — founding-pilot promotion
+9. **U.S. Launch Inquiry** — package, budget, and validation-goal form
 
-- Message: **Discover Korean lifestyle goods before everyone else.**
-- Buyer CTA: **Join the Launch List**
-- Brand CTA: **Request a Product Check**
+## Included interactions
 
-### Wireframe
+- Korean/English language switching with persistence
+- Responsive desktop, tablet, and mobile layouts
+- Mobile navigation
+- Intersection Observer reveal animations
+- UGC playback control outside the viewport and reduced-motion support
+- Package comparison, creator-rate, and add-on tabs
+- Package buttons that preselect the inquiry form and scroll to contact
+- Form validation including at least one validation goal
+- Frontend MVP inquiry storage with `localStorage`
+- Export Voucher information page
+- Separate koaus shop, product, and about pages
 
-```text
-HOME
-Hero → Categories → Problem/Solution/Effect → Shop preview
-→ Real-life video routines → Lookbook → Brand Values → Final CTA
-                 ↓
-SHOP → FILTER / SEARCH / SORT → PRODUCT DETAIL
-                 ↓
-ABOUT / HOW IT WORKS
-Problem → Product Picks → 3-Step Process → For Brands
-→ Launch Fit Checker → Journal → Final CTA
-```
+## Pricing disclaimer
+
+The package prices, creator rates, discount, duration, and sample performance figures are **MVP assumptions for the assignment**.
+
+- VAT is excluded.
+- Product cost, Korea-to-U.S. shipping, duties, and paid-media spend are not included.
+- Final quotations may vary by creator size, category, production difficulty, and usage rights.
+- Sample dashboard figures are explicitly presented as interface demonstration data, not verified campaign performance.
 
 ## Run locally
 
-No build step or package installation is required.
+No build process or package installation is required.
 
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 5500
 ```
 
-Then open `http://localhost:8000`.
+Open:
 
-## Project structure
+```text
+http://127.0.0.1:5500/
+```
+
+## Key files
 
 ```text
 .
 ├── index.html
+├── export-voucher.html
 ├── about.html
 ├── shop.html
 ├── product.html
 ├── css/
-│   ├── style.css
+│   ├── koahouse.css
+│   ├── koahouse-v2.css
+│   ├── koahouse-final.css
 │   ├── about.css
+│   ├── style.css
 │   └── store.css
 ├── js/
-│   ├── catalog.js
+│   ├── koahouse.js
+│   ├── koahouse-final.js
 │   ├── i18n.js
-│   ├── main.js
-│   ├── about.js
-│   ├── shop.js
-│   └── product.js
-├── images/
-│   ├── koaus-hero-collection.jpg
-│   ├── product-*.jpg
-│   └── README.md
+│   └── ...
 ├── videos/
+│   ├── hero/
 │   └── ugc-*.mp4
-└── README.md
+└── images/
 ```
 
-## Included interactions
+## Prototype limitations
 
-- Editorial homepage with a three-product shop preview
-- Dedicated shop catalog with URL-based category filters, live search, sorting, saved-only view, and responsive layouts
-- Dedicated product detail URLs with related picks, source transparency, saving, and pre-order-interest feedback
-- 29CM- and Ohouse-referenced sample products with original KRW and converted USD prices
-- Muted, looping, inline autoplay video routines with optional sound controls
-- Category-relevant real-life footage on product pages
-- Site-wide English/Korean language toggle persisted with `localStorage`
-- Korean translations for static pages, dynamically rendered product cards, form feedback, and product-check results
-- Saved products persisted with `localStorage`
-- Prototype launch-list and brand-check submissions persisted with `localStorage`
-- Saved-picks drawer
-- In-card voting feedback
-- Accessible launch-list modal
-- Complete product-check request modal
-- Separate `about.html` detail page with the original story, process, brand content, and Launch Fit calculator
-- Keyboard focus management and Escape-to-close behavior
-- Intersection Observer reveal animations with reduced-motion support
-
-## Sample product data
-
-The featured products are educational MVP references selected from 29CM and Ohouse product listings on July 27, 2026.
-
-- Conversion reference: approximately **₩1,461 = $1**, derived from the ECB EUR/KRW and EUR/USD reference rates published July 24, 2026.
-- USD values are simple rounded conversions of the listed KRW prices.
-- Shipping, duties, payment fees, and launch markup are not included.
-- Product names, photographs, and trademarks belong to their respective brands and sellers.
-- Each card links to its original 29CM or Ohouse listing. These references are not presented as current koaus inventory or authorized resale listings.
-
-## Static deployment
-
-This folder can be deployed directly to Vercel as a static site:
-
-1. Import the repository or upload the project.
-2. Leave the framework preset as **Other**.
-3. Do not set a build command.
-4. Use the project root as the output directory.
-
-The forms and pre-order interest tools are frontend MVP interactions stored in the visitor's browser. They do not submit to a backend yet.
-
-The current real-life clips are Pexels stock footage used as permission-clear MVP stand-ins and linked to their creators on the page. They are not presented as koaus customer submissions. Replace them with customer-created UGC only after obtaining contributor consent and the necessary usage rights.
+- The inquiry form is not connected to a production database or email service; submissions are stored only in the visitor's browser.
+- Connect Formspree, Tally, Google Forms, or a backend before public deployment.
+- Confirm all image and video usage rights before public or commercial use.
+- Final service scope, pricing, usage rights, and performance fees must be agreed separately for real brand campaigns.
