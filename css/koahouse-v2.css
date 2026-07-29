@@ -642,9 +642,9 @@ html[lang="en"] .cta-card .lead-card h3 {
 }
 
 html[lang="ko"] .launch-contact__intro h2 {
-  font-size: clamp(3rem, 5.45vw, 5.9rem);
-  line-height: 1.09;
-  letter-spacing: -.062em;
+  font-size: clamp(2.55rem, 4.35vw, 4.75rem);
+  line-height: 1.1;
+  letter-spacing: -.055em;
   word-break: keep-all;
 }
 
@@ -913,8 +913,8 @@ html[lang="ko"] .launch-contact__intro h2 {
 
   .launch-contact__intro h2,
   html[lang="ko"] .launch-contact__intro h2 {
-    font-size: 2.85rem;
-    line-height: 1.12;
+    font-size: 2.35rem;
+    line-height: 1.14;
   }
 
   .launch-contact__intro > p:not(.launch-contact__kicker) {
@@ -1285,3 +1285,58 @@ html[lang="ko"] .export-final-cta h2 {
   }
 }
 /* End Export Voucher page and inquiry refinement */
+
+
+/* Refined hero typography and pain-point messaging */
+html[lang="ko"] .hero--ugc h1 {
+  max-width: 850px;
+  font-size: clamp(2.3rem, 4.8vw, 4.85rem);
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+html[lang="en"] .hero--ugc h1 {
+  max-width: 850px;
+  font-size: clamp(2.45rem, 4.9vw, 5rem);
+  line-height: 1.04;
+  letter-spacing: -0.06em;
+}
+
+.hero-ugc-copy {
+  width: min(880px, 76%);
+}
+
+.hero-ugc-body {
+  max-width: 700px;
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .hero-ugc-copy {
+    width: min(760px, 88%);
+  }
+}
+
+@media (max-width: 560px) {
+  html[lang="ko"] .hero--ugc h1 {
+    font-size: 2.15rem;
+    line-height: 1.16;
+    letter-spacing: -0.045em;
+  }
+
+  html[lang="en"] .hero--ugc h1 {
+    font-size: 2.25rem;
+    line-height: 1.08;
+  }
+
+  .hero-ugc-copy {
+    width: 100%;
+  }
+
+  .hero-ugc-body {
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+}
+/* End refined hero typography */

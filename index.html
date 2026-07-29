@@ -258,19 +258,9 @@
       
 
       <div class="launch-form-grid">
-        <div class="launch-field">
-          <label for="company-name"><span data-i18n="labelCompany">기업명</span> <b>*</b></label>
-          <input id="company-name" name="company" type="text" required data-placeholder-ko="기업명" data-placeholder-en="Company name" placeholder="기업명" />
-        </div>
-
-        <div class="launch-field">
+        <div class="launch-field launch-field--full">
           <label for="brand-name"><span data-i18n="labelBrand">브랜드명</span> <b>*</b></label>
           <input id="brand-name" name="brand" type="text" required data-placeholder-ko="브랜드명" data-placeholder-en="Brand name" placeholder="브랜드명" />
-        </div>
-
-        <div class="launch-field launch-field--full">
-          <label for="brand-url" data-i18n="labelUrl">웹사이트 URL (선택)</label>
-          <input id="brand-url" name="url" type="url" data-placeholder-ko="https://" data-placeholder-en="https://" placeholder="https://" />
         </div>
 
         <div class="launch-field">
@@ -287,36 +277,6 @@
           <label for="contact-email"><span data-i18n="labelEmail">이메일</span> <b>*</b></label>
           <input id="contact-email" name="email" type="email" required data-placeholder-ko="email@example.com" data-placeholder-en="email@example.com" placeholder="email@example.com" />
         </div>
-      </div>
-
-      <fieldset class="launch-choice-group launch-field--full">
-        <legend><span data-i18n="labelCategory">업종 카테고리</span> <b>*</b></legend>
-        <div class="launch-chips">
-          <label><input type="radio" name="category" value="beauty" required checked /><span data-i18n="categoryBeauty">뷰티</span></label>
-          <label><input type="radio" name="category" value="fashion" required /><span data-i18n="categoryFashion">패션</span></label>
-          <label><input type="radio" name="category" value="food" required /><span>F&amp;B</span></label>
-          <label><input type="radio" name="category" value="lifestyle" required /><span data-i18n="categoryLifestyle">라이프스타일</span></label>
-          <label><input type="radio" name="category" value="tech" required /><span data-i18n="categoryTech">테크/IT</span></label>
-          <label><input type="radio" name="category" value="kids" required /><span data-i18n="categoryKids">키즈</span></label>
-          <label><input type="radio" name="category" value="travel" required /><span data-i18n="categoryTravel">여행/레저</span></label>
-          <label><input type="radio" name="category" value="other" required /><span data-i18n="other">기타</span></label>
-        </div>
-      </fieldset>
-
-      <div class="launch-field launch-field--full">
-        <label for="budget"><span data-i18n="labelBudget">예산</span> <b>*</b></label>
-        <select id="budget" name="budget" required>
-
-          <option value="" selected disabled data-i18n="selectBudget">예산 범위 선택</option>
-          <option value="under-1_5m" data-i18n="budget1">150만원 이하</option>
-          <option value="1_5m-3m" data-i18n="budget2">150~300만원</option>
-          <option value="3m-5m" data-i18n="budget3">300~500만원</option>
-          <option value="5m-10m" data-i18n="budget4">500~1,000만원</option>
-          <option value="10m-20m" data-i18n="budget5">1,000~2,000만원</option>
-          <option value="20m-30m" data-i18n="budget6">2,000~3,000만원</option>
-          <option value="30m-50m" data-i18n="budget7">3,000~5,000만원</option>
-          <option value="undecided" data-i18n="budgetUndecided">미정·상담 필요</option>
-        </select>
       </div>
 
       <div class="launch-field launch-field--full">
