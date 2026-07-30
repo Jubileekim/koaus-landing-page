@@ -146,8 +146,8 @@ main > section[id],
 
 .hero-ugc-inner {
   min-height: min(850px, calc(100svh - var(--koaus-header-offset)));
-  padding-top: clamp(58px, 7vh, 86px);
-  padding-bottom: 30px;
+  padding-top: clamp(68px, 7.5vh, 96px);
+  padding-bottom: 40px;
 }
 
 .hero-ugc-copy {
@@ -825,7 +825,7 @@ html[lang="en"] .hero--ugc h1 {
   }
 
   .hero-ugc-inner {
-    padding-top: 38px;
+    padding-top: 46px;
   }
 
   .hero-ugc-copy,

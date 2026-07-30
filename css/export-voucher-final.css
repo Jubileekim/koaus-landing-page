@@ -30,7 +30,7 @@
 }
 
 .export-voucher-page .section {
-  padding: clamp(72px, 7.2vw, 104px) 0;
+  padding: clamp(84px, 7.8vw, 116px) 0;
 }
 
 .export-voucher-page .section-kicker {
@@ -65,7 +65,7 @@ html[lang="en"] .export-voucher-page .section-heading h2 {
 .export-hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(72px, 8.2vw, 116px) 0;
+  padding: clamp(84px, 8.8vw, 128px) 0;
   color: var(--ink);
   background:
     radial-gradient(circle at 7% 12%, rgba(255, 204, 50, 0.62), transparent 31%),
@@ -427,7 +427,7 @@ html[lang="en"] .export-hero__copy h1 {
 .export-final-cta {
   position: relative;
   overflow: hidden;
-  padding: clamp(70px, 7.2vw, 96px) 0;
+  padding: clamp(82px, 7.8vw, 108px) 0;
   background:
     radial-gradient(circle at 8% 18%, rgba(255, 255, 255, 0.48), transparent 30%),
     radial-gradient(circle at 91% 84%, rgba(255, 79, 59, 0.25), transparent 32%),
@@ -489,7 +489,7 @@ html[lang="en"] .export-final-cta h2 {
 
 @media (max-width: 560px) {
   .export-hero {
-    padding: 58px 0 72px;
+    padding: 68px 0 84px;
   }
 
   .export-hero__copy h1,

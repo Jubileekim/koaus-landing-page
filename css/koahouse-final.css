@@ -1044,7 +1044,7 @@ main > section,
 }
 
 .section {
-  padding: clamp(72px, 7.5vw, 108px) 0;
+  padding: clamp(84px, 8vw, 120px) 0;
 }
 
 .section-kicker {
@@ -2041,7 +2041,7 @@ html[lang="en"] .koaus-launch-event__copy h2 {
 
 @media (max-width: 620px) {
   .section {
-    padding: 66px 0;
+    padding: 78px 0;
   }
 
   html[lang="ko"] .hero--ugc h1,
@@ -2287,8 +2287,8 @@ html[lang="en"] .koaus-launch-event__copy h2 {
 
 .hero-ugc-inner {
   min-height: min(820px, calc(100svh - 78px));
-  padding-top: clamp(66px, 8vh, 96px);
-  padding-bottom: 34px;
+  padding-top: clamp(76px, 8.5vh, 106px);
+  padding-bottom: 42px;
 }
 
 .hero-ugc-copy {
@@ -2476,8 +2476,8 @@ html[lang="en"] .hero--ugc h1 {
   }
 
   .hero-ugc-inner {
-    padding-top: 46px;
-    padding-bottom: 18px;
+    padding-top: 54px;
+    padding-bottom: 26px;
   }
 
   .ugc-mosaic {
