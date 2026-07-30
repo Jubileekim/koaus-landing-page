@@ -50,7 +50,7 @@ Object.assign(en, {
   labelGoal: 'Inquiry details',
   consent: 'I agree that the submitted information may be stored for inquiry review and follow-up.',
   submit: 'Send U.S. launch inquiry →',
-  formNote: 'In this local MVP, the inquiry is stored in this browser. Connect a live email collection service before public launch.'
+  formNote: 'Your inquiry is sent directly to the Koaus team. We will review it and follow up soon.'
 });
 
 /* Seven budget ranges */
@@ -126,7 +126,96 @@ Object.assign(en, {
 /* End launch inquiry translations */
 const koOriginal=new Map();document.querySelectorAll('[data-i18n]').forEach(el=>koOriginal.set(el.dataset.i18n,el.innerHTML));const titleKo=document.title;const meta=document.querySelector('meta[name="description"]');const metaKo=meta?.content;function setLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;el.innerHTML=lang==='en'?(en[key]??el.innerHTML):(koOriginal.get(key)??el.innerHTML)});document.querySelectorAll('[data-language]').forEach(btn=>btn.classList.toggle('is-active',btn.dataset.language===lang));document.title=lang==='en'?'Koaus Launch Studio — U.S. launch pilots for Korean brands':titleKo;if(meta)meta.content=lang==='en'?'Koaus helps Korean brands validate and launch in the U.S. through creators, UGC, and commerce execution.':metaKo;try{localStorage.setItem('koaus-launch-language',lang)}catch{}}document.querySelectorAll('[data-language]').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.language)));let savedLanguage='ko';try{savedLanguage=localStorage.getItem('koaus-launch-language')||'ko'}catch{}setLanguage(savedLanguage);
 
-const leadForm=document.querySelector('#lead-form');leadForm?.addEventListener('submit',event=>{event.preventDefault();const message=leadForm.querySelector('.form-message');const lang=document.documentElement.lang;if(!leadForm.checkValidity()){message.textContent=lang==='en'?'Please complete all required fields and agree to data storage.':'필수 항목을 모두 입력하고 정보 저장에 동의해 주세요.';leadForm.reportValidity();return}const entry=Object.fromEntries(new FormData(leadForm).entries());const key='koaus-launch-inquiries';let entries=[];try{entries=JSON.parse(localStorage.getItem(key)||'[]')}catch{}const duplicate=entries.some(item=>item.email?.toLowerCase()===entry.email.toLowerCase());if(duplicate){message.textContent=lang==='en'?'This email is already saved on this device.':'이 이메일은 현재 기기에 이미 저장되어 있습니다.';return}entries.push({...entry,createdAt:new Date().toISOString()});try{localStorage.setItem(key,JSON.stringify(entries));message.textContent=lang==='en'?'Your inquiry has been saved on this device. Connect a live form endpoint before public launch.':'문의 정보가 현재 기기에 저장되었습니다. 실제 공개 전에는 이메일 수집 서비스를 연결해야 합니다.';leadForm.reset()}catch{message.textContent=lang==='en'?'Your browser blocked local storage. Please try another browser window.':'브라우저가 저장을 차단했습니다. 일반 브라우저 창에서 다시 시도해 주세요.'}});
+const LEAD_FORM_ENDPOINT = 'https://formsubmit.co/ajax/jubileekim817@gmail.com';
+
+const leadForm = document.querySelector('#lead-form');
+leadForm?.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const message = leadForm.querySelector('.form-message');
+  const submitButton = leadForm.querySelector('.launch-submit');
+  const isEn = document.documentElement.lang === 'en';
+
+  message?.classList.remove('is-error', 'is-success');
+
+  if (!leadForm.checkValidity()) {
+    if (message) {
+      message.textContent = isEn
+        ? 'Please complete all required fields and agree to data storage.'
+        : '필수 항목을 모두 입력하고 정보 저장에 동의해 주세요.';
+      message.classList.add('is-error');
+    }
+    leadForm.reportValidity();
+    return;
+  }
+
+  const entry = Object.fromEntries(new FormData(leadForm).entries());
+  const brandLabel = entry.brand || (isEn ? 'Brand' : '브랜드');
+  const payload = {
+    _subject: isEn
+      ? `[KOAUS] Launch inquiry — ${brandLabel}`
+      : `[KOAUS] 런칭 문의 — ${brandLabel}`,
+    _template: 'table',
+    _captcha: 'false',
+    inquiryType: entry.inquiryType || '',
+    selectedPlan: entry.selectedPlan || '',
+    brand: entry.brand || '',
+    name: entry.name || '',
+    phone: entry.phone || '',
+    email: entry.email || '',
+    goal: entry.goal || '',
+    language: isEn ? 'en' : 'ko'
+  };
+
+  const originalLabel = submitButton?.textContent;
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.textContent = isEn ? 'Sending…' : '접수 중…';
+  }
+  if (message) {
+    message.textContent = isEn
+      ? 'Submitting your inquiry…'
+      : '문의를 접수하고 있습니다…';
+  }
+
+  try {
+    const response = await fetch(LEAD_FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+    const data = await response.json().catch(() => ({}));
+    const failed =
+      !response.ok || data.success === false || data.success === 'false';
+
+    if (failed) {
+      throw new Error(data.message || 'Submit failed');
+    }
+
+    if (message) {
+      message.textContent = isEn
+        ? 'Your inquiry has been received. We’ll review it and get back to you soon.'
+        : '문의가 정상적으로 접수되었습니다. 확인 후 빠르게 연락드릴게요.';
+      message.classList.add('is-success');
+    }
+    leadForm.reset();
+  } catch {
+    if (message) {
+      message.textContent = isEn
+        ? 'We couldn’t send your inquiry. Please try again in a moment.'
+        : '문의 전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+      message.classList.add('is-error');
+    }
+  } finally {
+    if (submitButton) {
+      submitButton.disabled = false;
+      if (originalLabel) submitButton.textContent = originalLabel;
+    }
+  }
+});
 
 /* UGC hero playback control */
 const ugcHero = document.querySelector('.hero--ugc');

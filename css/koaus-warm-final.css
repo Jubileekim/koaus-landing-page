@@ -721,6 +721,19 @@ html[lang="en"] .hero--ugc h1 {
   background: linear-gradient(90deg, var(--brand-red-600), var(--brand-orange-600));
 }
 
+.launch-submit:disabled {
+  opacity: 0.72;
+  cursor: wait;
+}
+
+.launch-inquiry-form .form-message.is-success {
+  color: #2f6b4f;
+}
+
+.launch-inquiry-form .form-message.is-error {
+  color: var(--brand-red-600);
+}
+
 /* -------------------------------------------------------------------------- */
 /* Responsive                                                                 */
 /* -------------------------------------------------------------------------- */
