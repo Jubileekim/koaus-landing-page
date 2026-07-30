@@ -1,491 +1,1450 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Koaus는 한국 브랜드가 큰 비용과 재고를 투입하기 전에 미국 크리에이터, UGC, 커머스 파일럿으로 시장 가능성을 검증하도록 돕는 런치 스튜디오입니다." />
-  <meta name="theme-color" content="#111713" />
-  <title>Koaus Launch Studio — 한국 브랜드의 미국 진출 파일럿</title>
-  <link rel="stylesheet" href="css/koahouse.css" />
-  <link rel="stylesheet" href="css/koahouse-v2.css" />
-  <link rel="stylesheet" href="css/koahouse-final.css" />
-  <script src="js/koahouse.js" defer></script>
-  <script src="js/koahouse-final.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main-content" data-i18n="skip">본문으로 바로가기</a>
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a class="wordmark" href="index.html" aria-label="Koaus home">koaus <span>/ launch studio</span></a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Koaus는 한국 브랜드가 큰 비용과 재고를 투입하기 전에 미국 크리에이터, UGC, 커머스 파일럿으로 시장 가능성을 검증하도록 돕는 런치 스튜디오입니다."
+    />
+    <meta name="theme-color" content="#111713" />
+    <title>Koaus Launch Studio — 한국 브랜드의 미국 진출 파일럿</title>
+    <link rel="canonical" href="https://koaus-launch-studio.vercel.app/" />
+
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Koaus Launch Studio" />
+    <meta property="og:url" content="https://koaus-launch-studio.vercel.app/" />
+    <meta
+      property="og:title"
+      content="Koaus Launch Studio — 한국 브랜드의 미국 진출 파일럿"
+    />
+    <meta
+      property="og:description"
+      content="한국 브랜드의 미국 시장 가능성을 크리에이터, UGC, 커머스 파일럿으로 검증합니다."
+    />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Koaus Launch Studio — 한국 브랜드의 미국 진출 파일럿"
+    />
+    <meta
+      name="twitter:description"
+      content="한국 브랜드의 미국 시장 가능성을 크리에이터, UGC, 커머스 파일럿으로 검증합니다."
+    />
+    <link rel="stylesheet" href="css/koahouse.css" />
+    <link rel="stylesheet" href="css/koahouse-v2.css" />
+    <link rel="stylesheet" href="css/koahouse-final.css" />
+    <script src="js/koahouse.js" defer></script>
+    <script src="js/koahouse-final.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Koaus Launch Studio",
+        "url": "https://koaus-launch-studio.vercel.app/",
+        "description": "한국 브랜드가 미국 크리에이터, UGC, 커머스 파일럿을 통해 미국 시장 가능성을 검증하도록 돕는 런치 스튜디오입니다.",
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "South Korea"
+          },
+          {
+            "@type": "Country",
+            "name": "United States"
+          }
+        ],
+        "serviceType": [
+          "U.S. market validation",
+          "Creator seeding",
+          "UGC production",
+          "Commerce pilot"
+        ],
+        "sameAs": ["https://koaus-shop.vercel.app/"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="skip"
+      >본문으로 바로가기</a
+    >
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="index.html" aria-label="Koaus home"
+          >koaus <span>/ launch studio</span></a
+        >
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#services" data-i18n="navServices">서비스</a>
+          <a href="#process" data-i18n="navProcess">진행 방식</a>
+          <a href="#pricing" data-final-i18n="navPricing">가격 안내</a>
+          <a href="#contact" data-i18n="navContact">문의하기</a>
+          <a
+            class="export-voucher-nav"
+            href="export-voucher.html"
+            data-i18n="navExportVoucher"
+            >수출바우처</a
+          >
+        </nav>
+        <div class="header-actions">
+          <a
+            class="shop-switch-link"
+            href="https://koaus-shop.vercel.app/"
+            aria-label="Go to Koaus Shop"
+            >koaus shop <span aria-hidden="true">↗</span></a
+          >
+          <div class="language-toggle" aria-label="Language switcher">
+            <button type="button" data-language="ko" class="is-active">
+              KO
+            </button>
+            <button type="button" data-language="en">EN</button>
+          </div>
+          <a
+            class="button button--dark"
+            href="#contact"
+            data-i18n="requestPilot"
+            >미국 런칭 문의</a
+          >
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav
+        class="mobile-menu"
+        id="mobile-menu"
+        aria-label="Mobile navigation"
+        hidden
+      >
         <a href="#services" data-i18n="navServices">서비스</a>
         <a href="#process" data-i18n="navProcess">진행 방식</a>
         <a href="#pricing" data-final-i18n="navPricing">가격 안내</a>
         <a href="#contact" data-i18n="navContact">문의하기</a>
-        <a class="export-voucher-nav" href="export-voucher.html" data-i18n="navExportVoucher">수출바우처</a>
+        <a
+          class="mobile-shop-link"
+          href="https://koaus-shop.vercel.app/"
+          aria-label="Go to Koaus Shop"
+          >koaus shop <span aria-hidden="true">↗</span></a
+        >
+        <a
+          class="mobile-export-voucher-link"
+          href="export-voucher.html"
+          data-i18n="navExportVoucher"
+          >수출바우처</a
+        >
       </nav>
-      <div class="header-actions">
-        <a class="shop-switch-link" href="http://localhost:8001" aria-label="Go to Koaus Shop">koaus shop <span aria-hidden="true">↗</span></a>
-        <div class="language-toggle" aria-label="Language switcher">
-          <button type="button" data-language="ko" class="is-active">KO</button>
-          <button type="button" data-language="en">EN</button>
-        </div>
-        <a class="button button--dark" href="#contact" data-i18n="requestPilot">미국 런칭 문의</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">☰</button>
-      </div>
-    </div>
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
-      <a href="#services" data-i18n="navServices">서비스</a>
-      <a href="#process" data-i18n="navProcess">진행 방식</a>
-      <a href="#pricing" data-final-i18n="navPricing">가격 안내</a>
-      <a href="#contact" data-i18n="navContact">문의하기</a>
-      <a class="mobile-shop-link" href="http://localhost:8001" aria-label="Go to Koaus Shop">koaus shop <span aria-hidden="true">↗</span></a>
-      <a class="mobile-export-voucher-link" href="export-voucher.html" data-i18n="navExportVoucher">수출바우처</a>
-    </nav>
-  </header>
+    </header>
 
-  <main id="main-content">
-    <section class="hero hero--ugc" aria-labelledby="hero-title">
-  <div class="ugc-mosaic" aria-hidden="true">
-    <div class="ugc-column ugc-column--1" style="--ugc-duration:28s;--ugc-direction:normal">
-  <div class="ugc-track">
-    <div class="ugc-loop-set">
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-01.mp4" />
-  </video>
-</article>
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-02.mp4" />
-  </video>
-</article>
-</div>
-    <div class="ugc-loop-set">
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-01.mp4" />
-  </video>
-</article>
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-02.mp4" />
-  </video>
-</article>
-</div>
-  </div>
-</div><div class="ugc-column ugc-column--2" style="--ugc-duration:34s;--ugc-direction:reverse">
-  <div class="ugc-track">
-    <div class="ugc-loop-set">
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-03.mp4" />
-  </video>
-</article>
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-04.mp4" />
-  </video>
-</article>
-</div>
-    <div class="ugc-loop-set">
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-03.mp4" />
-  </video>
-</article>
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-04.mp4" />
-  </video>
-</article>
-</div>
-  </div>
-</div><div class="ugc-column ugc-column--3" style="--ugc-duration:31s;--ugc-direction:normal">
-  <div class="ugc-track">
-    <div class="ugc-loop-set">
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-05.mp4" />
-  </video>
-</article>
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-06.mp4" />
-  </video>
-</article>
-</div>
-    <div class="ugc-loop-set">
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-05.mp4" />
-  </video>
-</article>
-<article class="ugc-card" aria-hidden="true">
-  <video autoplay muted loop playsinline preload="metadata" tabindex="-1">
-    <source src="videos/hero/ugc-06.mp4" />
-  </video>
-</article>
-</div>
-  </div>
-</div>
-  </div>
-  <div class="hero-ugc-shade" aria-hidden="true"></div>
-
-  <div class="shell hero-ugc-inner">
-    <div class="hero-ugc-copy" data-reveal>
-      <p class="eyebrow" data-i18n="heroEyebrow">새로운 시장, 더 합리적인 도전</p>
-      <h1 id="hero-title" data-i18n="heroTitle">남들은 미국에서 성장하는데,<br /><em>우리 브랜드도 될지</em> 궁금하신가요?</h1>
-      <p class="hero-ugc-body" data-i18n="heroBody">새로운 기회, 새로운 도전. Koaus는 큰 비용과 재고를 먼저 투입하기 전에 미국 크리에이터, UGC, 커머스 파일럿을 통해 우리 브랜드의 실제 시장 가능성을 가장 합리적인 방식으로 검증합니다.</p>
-
-      <div class="hero-actions">
-        <a class="button button--lime" href="#contact" data-i18n="heroPrimary">미국 런칭 문의 →</a>
-        <a class="button button--glass" href="#services" data-i18n="heroSecondary">서비스 보기</a>
-      </div>
-    </div>
-
-    <div class="hero-ugc-proof" data-reveal>
-      <div>
-        <strong>5–12</strong>
-        <span data-i18n="proofCreators">패키지별 미국 크리에이터</span>
-      </div>
-      <div>
-        <strong>4–8 weeks</strong>
-        <span data-i18n="proofDays">진단부터 결과 리포트까지</span>
-      </div>
-      <div>
-        <strong>UGC → Commerce</strong>
-        <span data-i18n="proofSystem">콘텐츠·리스팅·런치 연결</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section class="logo-strip koaus-insight-strip" aria-label="Koaus market testing principle">
-      <div class="shell logo-strip-inner">
-        <strong data-final-i18n="insightStripTitle">큰 론칭 전에, 작은 시장 신호부터 확인하세요.</strong>
-        <span data-final-i18n="insightStripBody">미국 크리에이터 반응과 UGC, 클릭·구매 데이터를 먼저 확인한 뒤 다음 투자를 결정합니다.</span>
-        <span class="insight-strip-keyword">TEST · LEARN · DECIDE</span>
-      </div>
-    </section>
-
-    <section class="section section--cream" id="why" data-reveal>
-      <div class="shell">
-        <div class="section-heading">
-          <div><p class="section-kicker" data-final-i18n="problemKicker">미국 진출의 불확실성</p></div>
-          <div>
-            <h2 data-final-i18n="problemTitle">미국에 진출하는 것보다,<br />미국에서 통할 근거를 찾는 일이 먼저입니다.</h2>
-            <p data-final-i18n="problemBody">누가 사고, 어떤 콘텐츠에 반응하며, 실제 구매로 이어질지 모르는 상태에서 재고·광고·물류비부터 투입하는 것이 가장 큰 위험입니다.</p>
-          </div>
-        </div>
-        <div class="problem-grid">
-          <article class="problem-card">
-            <span>01</span>
-            <small>Customer Uncertainty</small>
-            <h3 data-final-i18n="problem1Title">누가 우리 제품을 살지 모릅니다.</h3>
-            <p data-final-i18n="problem1Body">미국의 어떤 고객층이 제품에 관심을 보이고 구매 이유를 느끼는지 확인하기 어렵습니다.</p>
-          </article>
-          <article class="problem-card">
-            <span>02</span>
-            <small>Content Uncertainty</small>
-            <h3 data-final-i18n="problem2Title">어떤 콘텐츠가 통할지 모릅니다.</h3>
-            <p data-final-i18n="problem2Body">한국에서 쓰던 메시지와 표현이 미국 소비자의 관심과 신뢰를 만들지는 별개의 문제입니다.</p>
-          </article>
-          <article class="problem-card">
-            <span>03</span>
-            <small>Commerce Uncertainty</small>
-            <h3 data-final-i18n="problem3Title">관심이 구매로 이어질지 모릅니다.</h3>
-            <p data-final-i18n="problem3Body">조회와 좋아요가 실제 클릭·쿠폰 사용·주문으로 연결되는지 확인하기 전에 비용이 먼저 들어갑니다.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services" data-reveal>
-      <div class="shell">
-        <div class="section-heading">
-          <div><p class="section-kicker" data-final-i18n="solutionKicker">KOAUS SOLUTION</p></div>
-          <div>
-            <h2 data-final-i18n="solutionTitle">미국 시장 진출을<br />하나의 작은 실험으로.</h2>
-            <p data-final-i18n="solutionBody">Koaus가 브랜드와 맞는 미국 크리에이터를 선별하고, UGC 제작부터 실제 게시와 구매 추적까지 하나의 파일럿으로 운영합니다.</p>
-          </div>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <span>01</span><small>Creator</small>
-            <h3 data-final-i18n="service1Title">제품과 고객에 맞는 미국 크리에이터를 선별합니다.</h3>
-            <ul>
-              <li data-final-i18n="service1a">제품·카테고리 적합도 검토</li>
-              <li data-final-i18n="service1b">미국 크리에이터 후보 선별</li>
-              <li data-final-i18n="service1c">영문 브리프와 커뮤니케이션</li>
-              <li data-final-i18n="service1d">배송·일정·납품 관리</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <span>02</span><small>UGC</small>
-            <h3 data-final-i18n="service2Title">미국 소비자의 언어와 시선으로 콘텐츠를 만듭니다.</h3>
-            <ul>
-              <li data-final-i18n="service2a">제품 사용·시연 숏폼</li>
-              <li data-final-i18n="service2b">후킹과 메시지별 콘텐츠</li>
-              <li data-final-i18n="service2c">브랜드 채널 활용 소재</li>
-              <li data-final-i18n="service2d">사용권·원본 파일 옵션</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <span>03</span><small>Commerce</small>
-            <h3 data-final-i18n="service3Title">클릭·쿠폰·주문 데이터를 통해 구매 가능성을 확인합니다.</h3>
-            <ul>
-              <li data-final-i18n="service3a">추적 링크와 쿠폰 설정</li>
-              <li data-final-i18n="service3b">콘텐츠별 반응 비교</li>
-              <li data-final-i18n="service3c">초기 구매 신호 확인</li>
-              <li data-final-i18n="service3d">확대·수정·중단 권고안</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--ink" id="process" data-reveal>
-      <div class="shell">
-        <div class="section-heading">
-          <div><p class="section-kicker" data-final-i18n="processKicker">HOW IT WORKS</p></div>
-          <div>
-            <h2 data-final-i18n="processTitle">제품 하나로 시작해,<br />데이터로 다음을 결정합니다.</h2>
-            <p data-final-i18n="processBody">처음부터 많은 SKU와 예산을 투입하지 않습니다. 하나의 제품과 명확한 가설로 시작합니다.</p>
-          </div>
-        </div>
-        <div class="process">
-          <div class="process-visual">
-            <video autoplay muted loop playsinline preload="metadata" poster="images/product-desk-organizer.jpg"><source src="videos/ugc-desk-reset.mp4" type="video/mp4" /></video>
-            <div class="process-visual-caption"><span>PRODUCT</span><b>→</b><span>CREATOR</span><b>→</b><span>SIGNAL</span></div>
-          </div>
-          <div class="process-list">
-            <article class="process-step"><b>01</b><div><small>DIAGNOSE</small><h3 data-final-i18n="step1Title">브랜드·제품 진단</h3><p data-final-i18n="step1Body">제품, 가격, 타깃 고객, 현재 판매 준비도와 이번 파일럿에서 확인할 가설을 정리합니다.</p></div></article>
-            <article class="process-step"><b>02</b><div><small>MATCH</small><h3 data-final-i18n="step2Title">크리에이터 매칭</h3><p data-final-i18n="step2Body">팔로워 수보다 제품과 콘텐츠 적합도가 높은 미국 크리에이터를 선별합니다.</p></div></article>
-            <article class="process-step"><b>03</b><div><small>LAUNCH</small><h3 data-final-i18n="step3Title">파일럿 실행</h3><p data-final-i18n="step3Body">제품 발송, 영문 가이드, UGC 제작, 계정 게시와 추적 링크 운영을 관리합니다.</p></div></article>
-            <article class="process-step"><b>04</b><div><small>MEASURE</small><h3 data-final-i18n="step4Title">반응 측정과 다음 결정</h3><p data-final-i18n="step4Body">콘텐츠 반응과 구매 신호를 분석해 확대·수정·중단을 위한 다음 실행안을 제안합니다.</p></div></article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section koaus-results" id="results" data-reveal>
-      <div class="shell koaus-results__grid">
-        <div class="koaus-results__copy">
-          <p class="section-kicker" data-final-i18n="resultsKicker">RESULTS & METRICS</p>
-          <h2 data-final-i18n="resultsTitle">콘텐츠 개수가 아니라,<br />다음 결정을 위한 지표를 남깁니다.</h2>
-          <p data-final-i18n="resultsBody">캠페인이 끝난 뒤 단순한 조회수만 남기지 않습니다. 콘텐츠, 고객 반응, 구매 신호를 구분해 무엇을 계속하고 무엇을 바꿔야 하는지 정리합니다.</p>
-          <ul class="koaus-results__list">
-            <li><span>Content</span><b data-final-i18n="metricContent">포맷·훅·메시지·납품 현황</b></li>
-            <li><span>Audience</span><b data-final-i18n="metricAudience">조회·저장·댓글·소비자 질문</b></li>
-            <li><span>Commerce</span><b data-final-i18n="metricCommerce">링크 클릭·쿠폰·주문 신호</b></li>
-            <li><span>Decision</span><b data-final-i18n="metricDecision">확대·수정·중단 권고안</b></li>
-          </ul>
-        </div>
-        <div class="koaus-dashboard" aria-label="미국 시장 파일럿 결과 리포트 예시">
-          <div class="koaus-dashboard__top">
-            <div><span>SAMPLE REPORT</span><strong>U.S. Market Signal</strong></div>
-            <span class="koaus-dashboard__status"><i></i> PILOT COMPLETE</span>
-          </div>
-          <div class="koaus-dashboard__metrics">
-            <article><span>Creators</span><strong>8</strong><small>matched</small></article>
-            <article><span>Contents</span><strong>8</strong><small>published</small></article>
-            <article><span>Views</span><strong>12.4K</strong><small>sample</small></article>
-            <article><span>Signals</span><strong>23</strong><small>purchase intent</small></article>
-          </div>
-          <div class="koaus-dashboard__insight">
-            <span>TOP INSIGHT</span>
-            <strong data-final-i18n="dashboardInsight">일상 루틴형 콘텐츠의 저장과 제품 질문이 가장 높았습니다.</strong>
-            <small data-final-i18n="dashboardNext">NEXT · 광고용 훅 2종 추가 테스트</small>
-          </div>
-          <p data-final-i18n="dashboardDisclaimer">표시된 수치는 화면 설명을 위한 예시 데이터입니다.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section koaus-pricing" id="pricing" data-reveal aria-labelledby="pricing-title">
-      <div class="shell">
-        <div class="koaus-pricing__heading">
-          <div><p class="section-kicker" data-final-i18n="pricingKicker">PRICING · U.S. PILOT</p><h2 id="pricing-title" data-final-i18n="pricingTitle">미국 파일럿 패키지.</h2></div>
-          <p data-final-i18n="pricingBody">브랜드의 현재 단계와 검증 목적에 따라 가장 작은 반응 테스트부터 실제 구매 가능성 확인까지 선택할 수 있습니다.</p>
-        </div>
-
-        <div class="koaus-pricing__cards">
-          <article class="koaus-plan-card">
-            <div class="koaus-plan-card__head"><span>STARTER</span><h3 data-final-i18n="starterTitle">초기 미국 반응 테스트</h3><p data-final-i18n="starterDesc">콘텐츠 반응을 가볍게 확인하는 첫 테스트</p></div>
-            <div class="koaus-price"><strong data-final-price-ko="250" data-final-price-en="₩2.5M">250</strong><span data-final-price-ko="만원" data-final-price-en="">만원</span><small data-final-i18n="vatExcluded">VAT 별도</small></div>
-            <p class="koaus-per-person" data-final-i18n="starterPerPerson">미국 크리에이터 5명 · 약 50만원 / 1인</p>
-            <ul>
-              <li data-final-i18n="starter1">브랜드·제품 진단 1회</li><li data-final-i18n="starter2">미국 크리에이터 5명</li><li data-final-i18n="starter3">계정 게시 5건</li><li data-final-i18n="starter4">기본 반응 리포트</li><li data-final-i18n="starter5">운영 기간 약 4주</li>
-            </ul>
-            <button class="button button--ghost koaus-plan-select" type="button" data-plan="Starter" data-final-i18n="starterCta">이 플랜으로 시작하기</button>
-          </article>
-
-          <article class="koaus-plan-card koaus-plan-card--featured">
-            <div class="koaus-popular-badge" data-final-i18n="popularPlan">처음 시작하기 좋은 플랜</div>
-            <div class="koaus-plan-card__head"><span>VALIDATION</span><h3 data-final-i18n="validationTitle">미국 시장 검증 파일럿</h3><p data-final-i18n="validationDesc">고객·메시지·콘텐츠 반응을 비교하는 핵심 패키지</p></div>
-            <div class="koaus-price"><strong data-final-price-ko="480" data-final-price-en="₩4.8M">480</strong><span data-final-price-ko="만원" data-final-price-en="">만원</span><small data-final-i18n="vatExcluded">VAT 별도</small></div>
-            <p class="koaus-per-person" data-final-i18n="validationPerPerson">미국 크리에이터 8명 · 약 60만원 / 1인</p>
-            <ul>
-              <li data-final-i18n="validation1">미국 크리에이터 8명</li><li data-final-i18n="validation2">게시 콘텐츠 8건</li><li data-final-i18n="validation3">UGC 소재 확보</li><li data-final-i18n="validation4">링크·쿠폰 추적</li><li data-final-i18n="validation5">반응 비교 리포트</li><li data-final-i18n="validation6">전략 미팅 1회</li>
-            </ul>
-            <button class="button button--dark koaus-plan-select" type="button" data-plan="Validation" data-final-i18n="validationCta">추천 플랜 신청하기</button>
-          </article>
-
-          <article class="koaus-plan-card">
-            <div class="koaus-plan-card__head"><span>COMMERCE</span><h3 data-final-i18n="commerceTitle">미국 구매 가능성 검증</h3><p data-final-i18n="commerceDesc">클릭과 주문 신호까지 확인하는 심화 파일럿</p></div>
-            <div class="koaus-price"><strong data-final-price-ko="780" data-final-price-en="₩7.8M">780</strong><span data-final-price-ko="만원" data-final-price-en="">만원</span><small data-final-i18n="vatExcluded">VAT 별도</small></div>
-            <p class="koaus-per-person" data-final-i18n="commercePerPerson">미국 크리에이터 12명 · 약 65만원 / 1인</p>
-            <ul>
-              <li data-final-i18n="commerce1">커머스형 크리에이터 12명</li><li data-final-i18n="commerce2">게시 콘텐츠 12건</li><li data-final-i18n="commerce3">UGC 소재 확보</li><li data-final-i18n="commerce4">클릭·구매 추적</li><li data-final-i18n="commerce5">심화 시장 리포트</li><li data-final-i18n="commerce6">전략 미팅 2회</li>
-            </ul>
-            <button class="button button--ghost koaus-plan-select" type="button" data-plan="Commerce" data-final-i18n="commerceCta">구매 검증 상담하기</button>
-          </article>
-        </div>
-
-        <div class="koaus-pricing-detail">
-          <div class="koaus-detail-tabs" role="tablist" aria-label="가격 상세 정보">
-            <button class="koaus-detail-tab" type="button" role="tab" aria-selected="false" aria-controls="comparison-panel" id="comparison-tab" tabindex="-1" data-final-i18n="tabCompare">패키지 비교</button>
-            <button class="koaus-detail-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="rate-panel" id="rate-tab" tabindex="0" data-final-i18n="tabRate">크리에이터 단가</button>
-            <button class="koaus-detail-tab" type="button" role="tab" aria-selected="false" aria-controls="option-panel" id="option-tab" tabindex="-1" data-final-i18n="tabOptions">추가 옵션</button>
-          </div>
-
-          <div class="koaus-tab-panel" id="comparison-panel" role="tabpanel" aria-labelledby="comparison-tab" hidden>
-            <div class="koaus-table-scroll" tabindex="0">
-              <table>
-                <thead><tr><th data-final-i18n="comparisonItem">비교 항목</th><th>Starter</th><th class="featured-column">Validation</th><th>Commerce</th></tr></thead>
-                <tbody>
-                  <tr><th data-final-i18n="totalPackagePrice">총 패키지 금액</th><td data-final-price-ko="250만원" data-final-price-en="₩2.5M">250만원</td><td class="featured-column"><strong data-final-price-ko="480만원" data-final-price-en="₩4.8M">480만원</strong></td><td data-final-price-ko="780만원" data-final-price-en="₩7.8M">780만원</td></tr>
-                  <tr><th data-final-i18n="usCreators">미국 크리에이터</th><td data-final-price-ko="5명" data-final-price-en="5">5명</td><td class="featured-column" data-final-price-ko="8명" data-final-price-en="8">8명</td><td data-final-price-ko="12명" data-final-price-en="12">12명</td></tr>
-                  <tr><th data-final-i18n="postedContent">게시 콘텐츠</th><td data-final-price-ko="5건" data-final-price-en="5">5건</td><td class="featured-column" data-final-price-ko="8건" data-final-price-en="8">8건</td><td data-final-price-ko="12건" data-final-price-en="12">12건</td></tr>
-                  <tr><th data-final-i18n="ugcAssets">UGC 소재 확보</th><td data-final-i18n="basic">기본</td><td class="featured-column" data-final-i18n="included">포함</td><td data-final-i18n="included">포함</td></tr>
-                  <tr><th data-final-i18n="linkCouponTracking">링크·쿠폰 추적</th><td>–</td><td class="featured-column" data-final-i18n="included">포함</td><td data-final-i18n="included">포함</td></tr>
-                  <tr><th data-final-i18n="purchaseSignal">구매 신호 확인</th><td>–</td><td class="featured-column" data-final-i18n="limited">제한적</td><td data-final-i18n="included">포함</td></tr>
-                  <tr><th data-final-i18n="resultReport">결과 리포트</th><td data-final-i18n="basic">기본</td><td class="featured-column" data-final-i18n="comparative">비교형</td><td data-final-i18n="advanced">심화형</td></tr>
-                  <tr><th data-final-i18n="strategyMeeting">전략 미팅</th><td>–</td><td class="featured-column" data-final-i18n="once">1회</td><td data-final-i18n="twice">2회</td></tr>
-                  <tr><th data-final-i18n="operationPeriod">운영 기간</th><td data-final-i18n="fourWeeks">약 4주</td><td class="featured-column" data-final-i18n="fiveSixWeeks">약 5–6주</td><td data-final-i18n="sixEightWeeks">약 6–8주</td></tr>
-                </tbody>
-              </table>
+    <main id="main-content">
+      <section class="hero hero--ugc" aria-labelledby="hero-title">
+        <div class="ugc-mosaic" aria-hidden="true">
+          <div
+            class="ugc-column ugc-column--1"
+            style="--ugc-duration: 28s; --ugc-direction: normal"
+          >
+            <div class="ugc-track">
+              <div class="ugc-loop-set">
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-01.mp4" />
+                  </video>
+                </article>
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-02.mp4" />
+                  </video>
+                </article>
+              </div>
+              <div class="ugc-loop-set">
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-01.mp4" />
+                  </video>
+                </article>
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-02.mp4" />
+                  </video>
+                </article>
+              </div>
             </div>
           </div>
-
-          <div class="koaus-tab-panel is-active" id="rate-panel" role="tabpanel" aria-labelledby="rate-tab">
-            <div class="koaus-table-scroll" tabindex="0">
-              <table>
-                <thead><tr><th data-final-i18n="rateType">유형</th><th data-final-i18n="ratePurpose">활용 목적</th><th data-final-i18n="creatorCondition">크리에이터 조건</th><th data-final-i18n="minimumPeople">최소 인원</th><th data-final-i18n="ratePerPerson">단가 / 1인</th><th data-final-i18n="note">비고</th></tr></thead>
-                <tbody>
-                  <tr><th>UGC Basic</th><td data-final-i18n="ugcPurpose">브랜드 채널용 UGC</td><td data-final-i18n="ugcCreatorType">미국 UGC 제작형</td><td data-final-price-ko="3명" data-final-price-en="3">3명</td><td class="koaus-price-cell" data-final-price-ko="25만원" data-final-price-en="₩250K">25만원</td><td data-final-i18n="noPosting">계정 게시 없음</td></tr>
-                  <tr><th>Posting Starter</th><td data-final-i18n="initialResponseTest">초기 반응 테스트</td><td>1K–10K <span data-final-i18n="followers">팔로워</span></td><td data-final-price-ko="5명" data-final-price-en="5">5명</td><td class="koaus-price-cell" data-final-price-ko="32만원" data-final-price-en="₩320K">32만원</td><td data-final-i18n="onePost">게시 1건</td></tr>
-                  <tr><th>Nano</th><td data-final-i18n="targetResponseValidation">타깃 반응 검증</td><td data-final-i18n="categoryFitNano">카테고리 적합 1K–10K</td><td data-final-price-ko="5명" data-final-price-en="5">5명</td><td class="koaus-price-cell" data-final-price-ko="45만원" data-final-price-en="₩450K">45만원</td><td data-final-i18n="postBasicReport">게시 + 기본 리포트</td></tr>
-                  <tr><th>Micro</th><td data-final-i18n="reachTrust">도달·신뢰 확보</td><td>10K–50K <span data-final-i18n="followers">팔로워</span></td><td data-final-price-ko="3명" data-final-price-en="3">3명</td><td class="koaus-price-cell" data-final-price-ko="55만원~" data-final-price-en="From ₩550K">55만원~</td><td data-final-i18n="variesCategory">카테고리별 변동</td></tr>
-                  <tr><th>Commerce</th><td data-final-i18n="clickPurchaseTest">클릭·구매 테스트</td><td data-final-i18n="purchaseCreator">구매 유도형</td><td data-final-price-ko="5명" data-final-price-en="5">5명</td><td class="koaus-price-cell" data-final-price-ko="50만원~" data-final-price-en="From ₩500K">50만원~</td><td data-final-i18n="performanceFee">성과 수수료 별도</td></tr>
-                  <tr><th>Custom</th><td data-final-i18n="brandCustom">브랜드 맞춤형</td><td data-final-i18n="professionalCreator">50K+ 또는 전문 분야</td><td data-final-i18n="consultation">협의</td><td class="koaus-price-cell" data-final-i18n="customQuote">별도 견적</td><td data-final-i18n="rightsChannels">권리·채널 협의</td></tr>
-                </tbody>
-              </table>
+          <div
+            class="ugc-column ugc-column--2"
+            style="--ugc-duration: 34s; --ugc-direction: reverse"
+          >
+            <div class="ugc-track">
+              <div class="ugc-loop-set">
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-03.mp4" />
+                  </video>
+                </article>
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-04.mp4" />
+                  </video>
+                </article>
+              </div>
+              <div class="ugc-loop-set">
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-03.mp4" />
+                  </video>
+                </article>
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-04.mp4" />
+                  </video>
+                </article>
+              </div>
             </div>
           </div>
-
-          <div class="koaus-tab-panel" id="option-panel" role="tabpanel" aria-labelledby="option-tab" hidden>
-            <div class="koaus-addon-grid">
-              <article><span data-final-i18n="adRights3">광고 사용권 3개월</span><strong data-final-i18n="from150k">15만원부터</strong><small data-final-i18n="perCreator">크리에이터 1인</small></article>
-              <article><span data-final-i18n="adRights6">광고 사용권 6개월</span><strong data-final-i18n="from250k">25만원부터</strong><small data-final-i18n="perCreator">크리에이터 1인</small></article>
-              <article><span data-final-i18n="rawVideo">원본 영상 파일</span><strong data-final-i18n="from100k">10만원부터</strong><small data-final-i18n="perContent">콘텐츠 1건</small></article>
-              <article><span data-final-i18n="extraHook">추가 훅·버전 제작</span><strong data-final-i18n="from50k">5만원부터</strong><small data-final-i18n="perContent">콘텐츠 1건</small></article>
-              <article><span data-final-i18n="extraStory">스토리 추가 게시</span><strong data-final-i18n="from80k">8만원부터</strong><small data-final-i18n="perCreator">크리에이터 1인</small></article>
-              <article><span data-final-i18n="commerceFee">커머스 성과 수수료</span><strong>10–15%</strong><small data-final-i18n="orderSales">주문 매출 기준</small></article>
+          <div
+            class="ugc-column ugc-column--3"
+            style="--ugc-duration: 31s; --ugc-direction: normal"
+          >
+            <div class="ugc-track">
+              <div class="ugc-loop-set">
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-05.mp4" />
+                  </video>
+                </article>
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-06.mp4" />
+                  </video>
+                </article>
+              </div>
+              <div class="ugc-loop-set">
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-05.mp4" />
+                  </video>
+                </article>
+                <article class="ugc-card" aria-hidden="true">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    tabindex="-1"
+                  >
+                    <source src="videos/hero/ugc-06.mp4" />
+                  </video>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-        <p class="koaus-pricing-note" data-final-i18n="pricingNote">모든 금액은 VAT 별도입니다. 제품 제공비, 한국→미국 배송비, 관세, 광고 집행비는 포함되지 않습니다. 크리에이터 규모·카테고리·콘텐츠 난이도·사용권 조건에 따라 최종 견적은 달라질 수 있습니다. 본 가격은 과제용 MVP 가안입니다.</p>
-      </div>
-    </section>
+        <div class="hero-ugc-shade" aria-hidden="true"></div>
 
-    <section class="section koaus-launch-event" id="launch-event" data-reveal aria-labelledby="event-title">
-      <div class="shell koaus-launch-event__grid">
-        <div class="koaus-launch-event__copy">
-          <span class="koaus-event-badge">✦ FIRST LAUNCH EVENT</span>
-          <p data-final-i18n="eventLead">미국 시장 테스트가 처음이신가요?</p>
-          <h2 id="event-title" data-final-i18n="eventTitle">첫 파트너 혜택으로<br />더 가볍게 시작해보세요.</h2>
-          <p class="koaus-event-description" data-final-i18n="eventBody">선착순 3개 브랜드에 추천 패키지 할인과 미국 시장 사전 진단 혜택을 제공합니다.</p>
-          <button class="button button--dark koaus-plan-select" type="button" data-plan="Validation - First Launch Event" data-final-i18n="eventCta">신규 혜택 받기</button>
+        <div class="shell hero-ugc-inner">
+          <div class="hero-ugc-copy" data-reveal>
+            <p class="eyebrow" data-i18n="heroEyebrow">
+              새로운 시장, 더 합리적인 도전
+            </p>
+            <h1 id="hero-title" data-i18n="heroTitle">
+              남들은 미국에서 성장하는데,<br /><em>우리 브랜드도 될지</em>
+              궁금하신가요?
+            </h1>
+            <p class="hero-ugc-body" data-i18n="heroBody">
+              새로운 기회, 새로운 도전. Koaus는 큰 비용과 재고를 먼저 투입하기
+              전에 미국 크리에이터, UGC, 커머스 파일럿을 통해 우리 브랜드의 실제
+              시장 가능성을 가장 합리적인 방식으로 검증합니다.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="button button--lime"
+                href="#contact"
+                data-i18n="heroPrimary"
+                >미국 런칭 문의 →</a
+              >
+              <a
+                class="button button--glass"
+                href="#services"
+                data-i18n="heroSecondary"
+                >서비스 보기</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-ugc-proof" data-reveal>
+            <div>
+              <strong>5–12</strong>
+              <span data-i18n="proofCreators">패키지별 미국 크리에이터</span>
+            </div>
+            <div>
+              <strong>4–8 weeks</strong>
+              <span data-i18n="proofDays">진단부터 결과 리포트까지</span>
+            </div>
+            <div>
+              <strong>UGC → Commerce</strong>
+              <span data-i18n="proofSystem">콘텐츠·리스팅·런치 연결</span>
+            </div>
+          </div>
         </div>
-        <article class="koaus-event-card">
-          <div class="koaus-event-card__top">
-            <div><span>VALIDATION PACKAGE</span><h3 data-final-i18n="eventCardTitle">첫 런칭 파트너 20% 할인</h3></div>
-            <span class="koaus-event-roundel">LIMITED<br />3 BRANDS</span>
-          </div>
-          <div class="koaus-event-price"><del data-final-price-ko="480만원" data-final-price-en="₩4.8M">480만원</del><span>→</span><strong data-final-price-ko="384만원" data-final-price-en="₩3.84M">384만원</strong><small data-final-i18n="vatExcluded">VAT 별도</small></div>
-          <div class="koaus-event-benefits">
-            <ul><li data-final-i18n="event1">미국 크리에이터 8명</li><li data-final-i18n="event2">게시 콘텐츠 8건</li><li data-final-i18n="event3">UGC 소재 확보</li><li data-final-i18n="event4">링크·쿠폰 추적</li></ul>
-            <ul><li data-final-i18n="event5">반응 비교 리포트</li><li data-final-i18n="event6">미국 시장 진단 1회</li><li data-final-i18n="event7">전략 미팅 1회</li><li data-final-i18n="event8">후보군 추가 제안</li></ul>
-          </div>
-          <p data-final-i18n="eventNote">프로모션 조건과 외부 실비 포함 여부는 상담 후 최종 견적에서 확인됩니다.</p>
-        </article>
-      </div>
-    </section>
+      </section>
 
-    <section class="launch-contact" id="contact" aria-labelledby="launch-contact-title">
-      <div class="shell launch-contact__grid">
-        <div class="launch-contact__intro" data-reveal>
-          <p class="launch-contact__kicker">U.S. LAUNCH INQUIRY</p>
-          <h2 id="launch-contact-title" data-final-i18n="contactTitle">우리 브랜드도<br />미국에서 될지,<br />이제 추측하지 마세요.</h2>
-          <p data-final-i18n="contactBody">제품 하나와 확인하고 싶은 가설을 알려주세요. Koaus가 브랜드의 현재 단계와 예산에 맞춰 가장 작은 미국 시장 검증 방식부터 제안합니다.</p>
-          <div class="launch-contact__promise">
-            <span>01</span><p data-final-i18n="contactPromise1">한 제품부터 시작할 수 있는 현실적인 실행 범위</p>
-            <span>02</span><p data-final-i18n="contactPromise2">예산에 맞춘 크리에이터·UGC·커머스 구성</p>
-            <span>03</span><p data-final-i18n="contactPromise3">확대·수정·중단을 판단할 수 있는 다음 단계</p>
+      <section
+        class="logo-strip koaus-insight-strip"
+        aria-label="Koaus market testing principle"
+      >
+        <div class="shell logo-strip-inner">
+          <strong data-final-i18n="insightStripTitle"
+            >큰 론칭 전에, 작은 시장 신호부터 확인하세요.</strong
+          >
+          <span data-final-i18n="insightStripBody"
+            >미국 크리에이터 반응과 UGC, 클릭·구매 데이터를 먼저 확인한 뒤 다음
+            투자를 결정합니다.</span
+          >
+          <span class="insight-strip-keyword">TEST · LEARN · DECIDE</span>
+        </div>
+      </section>
+
+      <section class="section section--cream" id="why" data-reveal>
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker" data-final-i18n="problemKicker">
+                미국 진출의 불확실성
+              </p>
+            </div>
+            <div>
+              <h2 data-final-i18n="problemTitle">
+                미국에 진출하는 것보다,<br />미국에서 통할 근거를 찾는 일이
+                먼저입니다.
+              </h2>
+              <p data-final-i18n="problemBody">
+                누가 사고, 어떤 콘텐츠에 반응하며, 실제 구매로 이어질지 모르는
+                상태에서 재고·광고·물류비부터 투입하는 것이 가장 큰 위험입니다.
+              </p>
+            </div>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card">
+              <span>01</span>
+              <small>Customer Uncertainty</small>
+              <h3 data-final-i18n="problem1Title">
+                누가 우리 제품을 살지 모릅니다.
+              </h3>
+              <p data-final-i18n="problem1Body">
+                미국의 어떤 고객층이 제품에 관심을 보이고 구매 이유를 느끼는지
+                확인하기 어렵습니다.
+              </p>
+            </article>
+            <article class="problem-card">
+              <span>02</span>
+              <small>Content Uncertainty</small>
+              <h3 data-final-i18n="problem2Title">
+                어떤 콘텐츠가 통할지 모릅니다.
+              </h3>
+              <p data-final-i18n="problem2Body">
+                한국에서 쓰던 메시지와 표현이 미국 소비자의 관심과 신뢰를
+                만들지는 별개의 문제입니다.
+              </p>
+            </article>
+            <article class="problem-card">
+              <span>03</span>
+              <small>Commerce Uncertainty</small>
+              <h3 data-final-i18n="problem3Title">
+                관심이 구매로 이어질지 모릅니다.
+              </h3>
+              <p data-final-i18n="problem3Body">
+                조회와 좋아요가 실제 클릭·쿠폰 사용·주문으로 연결되는지 확인하기
+                전에 비용이 먼저 들어갑니다.
+              </p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <form class="launch-inquiry-form" id="lead-form" novalidate data-reveal>
-          <input id="selected-plan" name="selectedPlan" type="hidden" value="" />
-          <div class="launch-field launch-field--full">
-            <label for="inquiry-type"><span data-i18n="labelInquiryType">문의 유형</span> <b>*</b></label>
-            <select id="inquiry-type" name="inquiryType" required>
-              <option value="" selected disabled data-i18n="selectInquiryType">문의 유형 선택</option>
-              <option value="us-launch" data-i18n="inquiryUsLaunch">미국 런칭 통합</option>
-              <option value="market-validation" data-i18n="inquiryValidation">미국 시장 검증</option>
-              <option value="creator-seeding" data-i18n="inquiryCreator">크리에이터 시딩</option>
-              <option value="ugc-production" data-i18n="inquiryUgc">UGC 제작</option>
-              <option value="amazon-launch" data-i18n="inquiryAmazon">Amazon 런칭·운영</option>
-              <option value="export-voucher" data-i18n="inquiryExportVoucher">수출바우처 문의</option>
-              <option value="other" data-i18n="other">기타</option>
-            </select>
+      <section class="section" id="services" data-reveal>
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker" data-final-i18n="solutionKicker">
+                KOAUS SOLUTION
+              </p>
+            </div>
+            <div>
+              <h2 data-final-i18n="solutionTitle">
+                미국 시장 진출을<br />하나의 작은 실험으로.
+              </h2>
+              <p data-final-i18n="solutionBody">
+                Koaus가 브랜드와 맞는 미국 크리에이터를 선별하고, UGC 제작부터
+                실제 게시와 구매 추적까지 하나의 파일럿으로 운영합니다.
+              </p>
+            </div>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <span>01</span><small>Creator</small>
+              <h3 data-final-i18n="service1Title">
+                제품과 고객에 맞는 미국 크리에이터를 선별합니다.
+              </h3>
+              <ul>
+                <li data-final-i18n="service1a">제품·카테고리 적합도 검토</li>
+                <li data-final-i18n="service1b">미국 크리에이터 후보 선별</li>
+                <li data-final-i18n="service1c">영문 브리프와 커뮤니케이션</li>
+                <li data-final-i18n="service1d">배송·일정·납품 관리</li>
+              </ul>
+            </article>
+            <article class="service-card">
+              <span>02</span><small>UGC</small>
+              <h3 data-final-i18n="service2Title">
+                미국 소비자의 언어와 시선으로 콘텐츠를 만듭니다.
+              </h3>
+              <ul>
+                <li data-final-i18n="service2a">제품 사용·시연 숏폼</li>
+                <li data-final-i18n="service2b">후킹과 메시지별 콘텐츠</li>
+                <li data-final-i18n="service2c">브랜드 채널 활용 소재</li>
+                <li data-final-i18n="service2d">사용권·원본 파일 옵션</li>
+              </ul>
+            </article>
+            <article class="service-card">
+              <span>03</span><small>Commerce</small>
+              <h3 data-final-i18n="service3Title">
+                클릭·쿠폰·주문 데이터를 통해 구매 가능성을 확인합니다.
+              </h3>
+              <ul>
+                <li data-final-i18n="service3a">추적 링크와 쿠폰 설정</li>
+                <li data-final-i18n="service3b">콘텐츠별 반응 비교</li>
+                <li data-final-i18n="service3c">초기 구매 신호 확인</li>
+                <li data-final-i18n="service3d">확대·수정·중단 권고안</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--ink" id="process" data-reveal>
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker" data-final-i18n="processKicker">
+                HOW IT WORKS
+              </p>
+            </div>
+            <div>
+              <h2 data-final-i18n="processTitle">
+                제품 하나로 시작해,<br />데이터로 다음을 결정합니다.
+              </h2>
+              <p data-final-i18n="processBody">
+                처음부터 많은 SKU와 예산을 투입하지 않습니다. 하나의 제품과
+                명확한 가설로 시작합니다.
+              </p>
+            </div>
+          </div>
+          <div class="process">
+            <div class="process-visual">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="images/product-desk-organizer.jpg"
+              >
+                <source src="videos/ugc-desk-reset.mp4" type="video/mp4" />
+              </video>
+              <div class="process-visual-caption">
+                <span>PRODUCT</span><b>→</b><span>CREATOR</span><b>→</b
+                ><span>SIGNAL</span>
+              </div>
+            </div>
+            <div class="process-list">
+              <article class="process-step">
+                <b>01</b>
+                <div>
+                  <small>DIAGNOSE</small>
+                  <h3 data-final-i18n="step1Title">브랜드·제품 진단</h3>
+                  <p data-final-i18n="step1Body">
+                    제품, 가격, 타깃 고객, 현재 판매 준비도와 이번 파일럿에서
+                    확인할 가설을 정리합니다.
+                  </p>
+                </div>
+              </article>
+              <article class="process-step">
+                <b>02</b>
+                <div>
+                  <small>MATCH</small>
+                  <h3 data-final-i18n="step2Title">크리에이터 매칭</h3>
+                  <p data-final-i18n="step2Body">
+                    팔로워 수보다 제품과 콘텐츠 적합도가 높은 미국 크리에이터를
+                    선별합니다.
+                  </p>
+                </div>
+              </article>
+              <article class="process-step">
+                <b>03</b>
+                <div>
+                  <small>LAUNCH</small>
+                  <h3 data-final-i18n="step3Title">파일럿 실행</h3>
+                  <p data-final-i18n="step3Body">
+                    제품 발송, 영문 가이드, UGC 제작, 계정 게시와 추적 링크
+                    운영을 관리합니다.
+                  </p>
+                </div>
+              </article>
+              <article class="process-step">
+                <b>04</b>
+                <div>
+                  <small>MEASURE</small>
+                  <h3 data-final-i18n="step4Title">반응 측정과 다음 결정</h3>
+                  <p data-final-i18n="step4Body">
+                    콘텐츠 반응과 구매 신호를 분석해 확대·수정·중단을 위한 다음
+                    실행안을 제안합니다.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section koaus-results" id="results" data-reveal>
+        <div class="shell koaus-results__grid">
+          <div class="koaus-results__copy">
+            <p class="section-kicker" data-final-i18n="resultsKicker">
+              RESULTS & METRICS
+            </p>
+            <h2 data-final-i18n="resultsTitle">
+              콘텐츠 개수가 아니라,<br />다음 결정을 위한 지표를 남깁니다.
+            </h2>
+            <p data-final-i18n="resultsBody">
+              캠페인이 끝난 뒤 단순한 조회수만 남기지 않습니다. 콘텐츠, 고객
+              반응, 구매 신호를 구분해 무엇을 계속하고 무엇을 바꿔야 하는지
+              정리합니다.
+            </p>
+            <ul class="koaus-results__list">
+              <li>
+                <span>Content</span
+                ><b data-final-i18n="metricContent">포맷·훅·메시지·납품 현황</b>
+              </li>
+              <li>
+                <span>Audience</span
+                ><b data-final-i18n="metricAudience"
+                  >조회·저장·댓글·소비자 질문</b
+                >
+              </li>
+              <li>
+                <span>Commerce</span
+                ><b data-final-i18n="metricCommerce"
+                  >링크 클릭·쿠폰·주문 신호</b
+                >
+              </li>
+              <li>
+                <span>Decision</span
+                ><b data-final-i18n="metricDecision">확대·수정·중단 권고안</b>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="koaus-dashboard"
+            aria-label="미국 시장 파일럿 결과 리포트 예시"
+          >
+            <div class="koaus-dashboard__top">
+              <div>
+                <span>SAMPLE REPORT</span><strong>U.S. Market Signal</strong>
+              </div>
+              <span class="koaus-dashboard__status"
+                ><i></i> PILOT COMPLETE</span
+              >
+            </div>
+            <div class="koaus-dashboard__metrics">
+              <article>
+                <span>Creators</span><strong>8</strong><small>matched</small>
+              </article>
+              <article>
+                <span>Contents</span><strong>8</strong><small>published</small>
+              </article>
+              <article>
+                <span>Views</span><strong>12.4K</strong><small>sample</small>
+              </article>
+              <article>
+                <span>Signals</span><strong>23</strong
+                ><small>purchase intent</small>
+              </article>
+            </div>
+            <div class="koaus-dashboard__insight">
+              <span>TOP INSIGHT</span>
+              <strong data-final-i18n="dashboardInsight"
+                >일상 루틴형 콘텐츠의 저장과 제품 질문이 가장
+                높았습니다.</strong
+              >
+              <small data-final-i18n="dashboardNext"
+                >NEXT · 광고용 훅 2종 추가 테스트</small
+              >
+            </div>
+            <p data-final-i18n="dashboardDisclaimer">
+              표시된 수치는 화면 설명을 위한 예시 데이터입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section koaus-pricing"
+        id="pricing"
+        data-reveal
+        aria-labelledby="pricing-title"
+      >
+        <div class="shell">
+          <div class="koaus-pricing__heading">
+            <div>
+              <p class="section-kicker" data-final-i18n="pricingKicker">
+                PRICING · U.S. PILOT
+              </p>
+              <h2 id="pricing-title" data-final-i18n="pricingTitle">
+                미국 파일럿 패키지.
+              </h2>
+            </div>
+            <p data-final-i18n="pricingBody">
+              브랜드의 현재 단계와 검증 목적에 따라 가장 작은 반응 테스트부터
+              실제 구매 가능성 확인까지 선택할 수 있습니다.
+            </p>
           </div>
 
-          <div class="launch-form-grid">
+          <div class="koaus-pricing__cards">
+            <article class="koaus-plan-card">
+              <div class="koaus-plan-card__head">
+                <span>STARTER</span>
+                <h3 data-final-i18n="starterTitle">초기 미국 반응 테스트</h3>
+                <p data-final-i18n="starterDesc">
+                  콘텐츠 반응을 가볍게 확인하는 첫 테스트
+                </p>
+              </div>
+              <div class="koaus-price">
+                <strong data-final-price-ko="250" data-final-price-en="₩2.5M"
+                  >250</strong
+                ><span data-final-price-ko="만원" data-final-price-en=""
+                  >만원</span
+                ><small data-final-i18n="vatExcluded">VAT 별도</small>
+              </div>
+              <p class="koaus-per-person" data-final-i18n="starterPerPerson">
+                미국 크리에이터 5명 · 약 50만원 / 1인
+              </p>
+              <ul>
+                <li data-final-i18n="starter1">브랜드·제품 진단 1회</li>
+                <li data-final-i18n="starter2">미국 크리에이터 5명</li>
+                <li data-final-i18n="starter3">계정 게시 5건</li>
+                <li data-final-i18n="starter4">기본 반응 리포트</li>
+                <li data-final-i18n="starter5">운영 기간 약 4주</li>
+              </ul>
+              <button
+                class="button button--ghost koaus-plan-select"
+                type="button"
+                data-plan="Starter"
+                data-final-i18n="starterCta"
+              >
+                이 플랜으로 시작하기
+              </button>
+            </article>
+
+            <article class="koaus-plan-card koaus-plan-card--featured">
+              <div class="koaus-popular-badge" data-final-i18n="popularPlan">
+                처음 시작하기 좋은 플랜
+              </div>
+              <div class="koaus-plan-card__head">
+                <span>VALIDATION</span>
+                <h3 data-final-i18n="validationTitle">미국 시장 검증 파일럿</h3>
+                <p data-final-i18n="validationDesc">
+                  고객·메시지·콘텐츠 반응을 비교하는 핵심 패키지
+                </p>
+              </div>
+              <div class="koaus-price">
+                <strong data-final-price-ko="480" data-final-price-en="₩4.8M"
+                  >480</strong
+                ><span data-final-price-ko="만원" data-final-price-en=""
+                  >만원</span
+                ><small data-final-i18n="vatExcluded">VAT 별도</small>
+              </div>
+              <p class="koaus-per-person" data-final-i18n="validationPerPerson">
+                미국 크리에이터 8명 · 약 60만원 / 1인
+              </p>
+              <ul>
+                <li data-final-i18n="validation1">미국 크리에이터 8명</li>
+                <li data-final-i18n="validation2">게시 콘텐츠 8건</li>
+                <li data-final-i18n="validation3">UGC 소재 확보</li>
+                <li data-final-i18n="validation4">링크·쿠폰 추적</li>
+                <li data-final-i18n="validation5">반응 비교 리포트</li>
+                <li data-final-i18n="validation6">전략 미팅 1회</li>
+              </ul>
+              <button
+                class="button button--dark koaus-plan-select"
+                type="button"
+                data-plan="Validation"
+                data-final-i18n="validationCta"
+              >
+                추천 플랜 신청하기
+              </button>
+            </article>
+
+            <article class="koaus-plan-card">
+              <div class="koaus-plan-card__head">
+                <span>COMMERCE</span>
+                <h3 data-final-i18n="commerceTitle">미국 구매 가능성 검증</h3>
+                <p data-final-i18n="commerceDesc">
+                  클릭과 주문 신호까지 확인하는 심화 파일럿
+                </p>
+              </div>
+              <div class="koaus-price">
+                <strong data-final-price-ko="780" data-final-price-en="₩7.8M"
+                  >780</strong
+                ><span data-final-price-ko="만원" data-final-price-en=""
+                  >만원</span
+                ><small data-final-i18n="vatExcluded">VAT 별도</small>
+              </div>
+              <p class="koaus-per-person" data-final-i18n="commercePerPerson">
+                미국 크리에이터 12명 · 약 65만원 / 1인
+              </p>
+              <ul>
+                <li data-final-i18n="commerce1">커머스형 크리에이터 12명</li>
+                <li data-final-i18n="commerce2">게시 콘텐츠 12건</li>
+                <li data-final-i18n="commerce3">UGC 소재 확보</li>
+                <li data-final-i18n="commerce4">클릭·구매 추적</li>
+                <li data-final-i18n="commerce5">심화 시장 리포트</li>
+                <li data-final-i18n="commerce6">전략 미팅 2회</li>
+              </ul>
+              <button
+                class="button button--ghost koaus-plan-select"
+                type="button"
+                data-plan="Commerce"
+                data-final-i18n="commerceCta"
+              >
+                구매 검증 상담하기
+              </button>
+            </article>
+          </div>
+
+          <div class="koaus-pricing-detail">
+            <div
+              class="koaus-detail-tabs"
+              role="tablist"
+              aria-label="가격 상세 정보"
+            >
+              <button
+                class="koaus-detail-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="comparison-panel"
+                id="comparison-tab"
+                tabindex="-1"
+                data-final-i18n="tabCompare"
+              >
+                패키지 비교
+              </button>
+              <button
+                class="koaus-detail-tab is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="rate-panel"
+                id="rate-tab"
+                tabindex="0"
+                data-final-i18n="tabRate"
+              >
+                크리에이터 단가
+              </button>
+              <button
+                class="koaus-detail-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="option-panel"
+                id="option-tab"
+                tabindex="-1"
+                data-final-i18n="tabOptions"
+              >
+                추가 옵션
+              </button>
+            </div>
+
+            <div
+              class="koaus-tab-panel"
+              id="comparison-panel"
+              role="tabpanel"
+              aria-labelledby="comparison-tab"
+              hidden
+            >
+              <div class="koaus-table-scroll" tabindex="0">
+                <table>
+                  <thead>
+                    <tr>
+                      <th data-final-i18n="comparisonItem">비교 항목</th>
+                      <th>Starter</th>
+                      <th class="featured-column">Validation</th>
+                      <th>Commerce</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th data-final-i18n="totalPackagePrice">
+                        총 패키지 금액
+                      </th>
+                      <td
+                        data-final-price-ko="250만원"
+                        data-final-price-en="₩2.5M"
+                      >
+                        250만원
+                      </td>
+                      <td class="featured-column">
+                        <strong
+                          data-final-price-ko="480만원"
+                          data-final-price-en="₩4.8M"
+                          >480만원</strong
+                        >
+                      </td>
+                      <td
+                        data-final-price-ko="780만원"
+                        data-final-price-en="₩7.8M"
+                      >
+                        780만원
+                      </td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="usCreators">미국 크리에이터</th>
+                      <td data-final-price-ko="5명" data-final-price-en="5">
+                        5명
+                      </td>
+                      <td
+                        class="featured-column"
+                        data-final-price-ko="8명"
+                        data-final-price-en="8"
+                      >
+                        8명
+                      </td>
+                      <td data-final-price-ko="12명" data-final-price-en="12">
+                        12명
+                      </td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="postedContent">게시 콘텐츠</th>
+                      <td data-final-price-ko="5건" data-final-price-en="5">
+                        5건
+                      </td>
+                      <td
+                        class="featured-column"
+                        data-final-price-ko="8건"
+                        data-final-price-en="8"
+                      >
+                        8건
+                      </td>
+                      <td data-final-price-ko="12건" data-final-price-en="12">
+                        12건
+                      </td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="ugcAssets">UGC 소재 확보</th>
+                      <td data-final-i18n="basic">기본</td>
+                      <td class="featured-column" data-final-i18n="included">
+                        포함
+                      </td>
+                      <td data-final-i18n="included">포함</td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="linkCouponTracking">
+                        링크·쿠폰 추적
+                      </th>
+                      <td>–</td>
+                      <td class="featured-column" data-final-i18n="included">
+                        포함
+                      </td>
+                      <td data-final-i18n="included">포함</td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="purchaseSignal">구매 신호 확인</th>
+                      <td>–</td>
+                      <td class="featured-column" data-final-i18n="limited">
+                        제한적
+                      </td>
+                      <td data-final-i18n="included">포함</td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="resultReport">결과 리포트</th>
+                      <td data-final-i18n="basic">기본</td>
+                      <td class="featured-column" data-final-i18n="comparative">
+                        비교형
+                      </td>
+                      <td data-final-i18n="advanced">심화형</td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="strategyMeeting">전략 미팅</th>
+                      <td>–</td>
+                      <td class="featured-column" data-final-i18n="once">
+                        1회
+                      </td>
+                      <td data-final-i18n="twice">2회</td>
+                    </tr>
+                    <tr>
+                      <th data-final-i18n="operationPeriod">운영 기간</th>
+                      <td data-final-i18n="fourWeeks">약 4주</td>
+                      <td
+                        class="featured-column"
+                        data-final-i18n="fiveSixWeeks"
+                      >
+                        약 5–6주
+                      </td>
+                      <td data-final-i18n="sixEightWeeks">약 6–8주</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div
+              class="koaus-tab-panel is-active"
+              id="rate-panel"
+              role="tabpanel"
+              aria-labelledby="rate-tab"
+            >
+              <div class="koaus-table-scroll" tabindex="0">
+                <table>
+                  <thead>
+                    <tr>
+                      <th data-final-i18n="rateType">유형</th>
+                      <th data-final-i18n="ratePurpose">활용 목적</th>
+                      <th data-final-i18n="creatorCondition">
+                        크리에이터 조건
+                      </th>
+                      <th data-final-i18n="minimumPeople">최소 인원</th>
+                      <th data-final-i18n="ratePerPerson">단가 / 1인</th>
+                      <th data-final-i18n="note">비고</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>UGC Basic</th>
+                      <td data-final-i18n="ugcPurpose">브랜드 채널용 UGC</td>
+                      <td data-final-i18n="ugcCreatorType">미국 UGC 제작형</td>
+                      <td data-final-price-ko="3명" data-final-price-en="3">
+                        3명
+                      </td>
+                      <td
+                        class="koaus-price-cell"
+                        data-final-price-ko="25만원"
+                        data-final-price-en="₩250K"
+                      >
+                        25만원
+                      </td>
+                      <td data-final-i18n="noPosting">계정 게시 없음</td>
+                    </tr>
+                    <tr>
+                      <th>Posting Starter</th>
+                      <td data-final-i18n="initialResponseTest">
+                        초기 반응 테스트
+                      </td>
+                      <td>
+                        1K–10K <span data-final-i18n="followers">팔로워</span>
+                      </td>
+                      <td data-final-price-ko="5명" data-final-price-en="5">
+                        5명
+                      </td>
+                      <td
+                        class="koaus-price-cell"
+                        data-final-price-ko="32만원"
+                        data-final-price-en="₩320K"
+                      >
+                        32만원
+                      </td>
+                      <td data-final-i18n="onePost">게시 1건</td>
+                    </tr>
+                    <tr>
+                      <th>Nano</th>
+                      <td data-final-i18n="targetResponseValidation">
+                        타깃 반응 검증
+                      </td>
+                      <td data-final-i18n="categoryFitNano">
+                        카테고리 적합 1K–10K
+                      </td>
+                      <td data-final-price-ko="5명" data-final-price-en="5">
+                        5명
+                      </td>
+                      <td
+                        class="koaus-price-cell"
+                        data-final-price-ko="45만원"
+                        data-final-price-en="₩450K"
+                      >
+                        45만원
+                      </td>
+                      <td data-final-i18n="postBasicReport">
+                        게시 + 기본 리포트
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Micro</th>
+                      <td data-final-i18n="reachTrust">도달·신뢰 확보</td>
+                      <td>
+                        10K–50K <span data-final-i18n="followers">팔로워</span>
+                      </td>
+                      <td data-final-price-ko="3명" data-final-price-en="3">
+                        3명
+                      </td>
+                      <td
+                        class="koaus-price-cell"
+                        data-final-price-ko="55만원~"
+                        data-final-price-en="From ₩550K"
+                      >
+                        55만원~
+                      </td>
+                      <td data-final-i18n="variesCategory">카테고리별 변동</td>
+                    </tr>
+                    <tr>
+                      <th>Commerce</th>
+                      <td data-final-i18n="clickPurchaseTest">
+                        클릭·구매 테스트
+                      </td>
+                      <td data-final-i18n="purchaseCreator">구매 유도형</td>
+                      <td data-final-price-ko="5명" data-final-price-en="5">
+                        5명
+                      </td>
+                      <td
+                        class="koaus-price-cell"
+                        data-final-price-ko="50만원~"
+                        data-final-price-en="From ₩500K"
+                      >
+                        50만원~
+                      </td>
+                      <td data-final-i18n="performanceFee">성과 수수료 별도</td>
+                    </tr>
+                    <tr>
+                      <th>Custom</th>
+                      <td data-final-i18n="brandCustom">브랜드 맞춤형</td>
+                      <td data-final-i18n="professionalCreator">
+                        50K+ 또는 전문 분야
+                      </td>
+                      <td data-final-i18n="consultation">협의</td>
+                      <td
+                        class="koaus-price-cell"
+                        data-final-i18n="customQuote"
+                      >
+                        별도 견적
+                      </td>
+                      <td data-final-i18n="rightsChannels">권리·채널 협의</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div
+              class="koaus-tab-panel"
+              id="option-panel"
+              role="tabpanel"
+              aria-labelledby="option-tab"
+              hidden
+            >
+              <div class="koaus-addon-grid">
+                <article>
+                  <span data-final-i18n="adRights3">광고 사용권 3개월</span
+                  ><strong data-final-i18n="from150k">15만원부터</strong
+                  ><small data-final-i18n="perCreator">크리에이터 1인</small>
+                </article>
+                <article>
+                  <span data-final-i18n="adRights6">광고 사용권 6개월</span
+                  ><strong data-final-i18n="from250k">25만원부터</strong
+                  ><small data-final-i18n="perCreator">크리에이터 1인</small>
+                </article>
+                <article>
+                  <span data-final-i18n="rawVideo">원본 영상 파일</span
+                  ><strong data-final-i18n="from100k">10만원부터</strong
+                  ><small data-final-i18n="perContent">콘텐츠 1건</small>
+                </article>
+                <article>
+                  <span data-final-i18n="extraHook">추가 훅·버전 제작</span
+                  ><strong data-final-i18n="from50k">5만원부터</strong
+                  ><small data-final-i18n="perContent">콘텐츠 1건</small>
+                </article>
+                <article>
+                  <span data-final-i18n="extraStory">스토리 추가 게시</span
+                  ><strong data-final-i18n="from80k">8만원부터</strong
+                  ><small data-final-i18n="perCreator">크리에이터 1인</small>
+                </article>
+                <article>
+                  <span data-final-i18n="commerceFee">커머스 성과 수수료</span
+                  ><strong>10–15%</strong
+                  ><small data-final-i18n="orderSales">주문 매출 기준</small>
+                </article>
+              </div>
+            </div>
+          </div>
+          <p class="koaus-pricing-note" data-final-i18n="pricingNote">
+            모든 금액은 VAT 별도입니다. 제품 제공비, 한국→미국 배송비, 관세,
+            광고 집행비는 포함되지 않습니다. 크리에이터 규모·카테고리·콘텐츠
+            난이도·사용권 조건에 따라 최종 견적은 달라질 수 있습니다. 본 가격은
+            과제용 MVP 가안입니다.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section koaus-launch-event"
+        id="launch-event"
+        data-reveal
+        aria-labelledby="event-title"
+      >
+        <div class="shell koaus-launch-event__grid">
+          <div class="koaus-launch-event__copy">
+            <span class="koaus-event-badge">✦ FIRST LAUNCH EVENT</span>
+            <p data-final-i18n="eventLead">미국 시장 테스트가 처음이신가요?</p>
+            <h2 id="event-title" data-final-i18n="eventTitle">
+              첫 파트너 혜택으로<br />더 가볍게 시작해보세요.
+            </h2>
+            <p class="koaus-event-description" data-final-i18n="eventBody">
+              선착순 3개 브랜드에 추천 패키지 할인과 미국 시장 사전 진단 혜택을
+              제공합니다.
+            </p>
+            <button
+              class="button button--dark koaus-plan-select"
+              type="button"
+              data-plan="Validation - First Launch Event"
+              data-final-i18n="eventCta"
+            >
+              신규 혜택 받기
+            </button>
+          </div>
+          <article class="koaus-event-card">
+            <div class="koaus-event-card__top">
+              <div>
+                <span>VALIDATION PACKAGE</span>
+                <h3 data-final-i18n="eventCardTitle">
+                  첫 런칭 파트너 20% 할인
+                </h3>
+              </div>
+              <span class="koaus-event-roundel">LIMITED<br />3 BRANDS</span>
+            </div>
+            <div class="koaus-event-price">
+              <del data-final-price-ko="480만원" data-final-price-en="₩4.8M"
+                >480만원</del
+              ><span>→</span
+              ><strong
+                data-final-price-ko="384만원"
+                data-final-price-en="₩3.84M"
+                >384만원</strong
+              ><small data-final-i18n="vatExcluded">VAT 별도</small>
+            </div>
+            <div class="koaus-event-benefits">
+              <ul>
+                <li data-final-i18n="event1">미국 크리에이터 8명</li>
+                <li data-final-i18n="event2">게시 콘텐츠 8건</li>
+                <li data-final-i18n="event3">UGC 소재 확보</li>
+                <li data-final-i18n="event4">링크·쿠폰 추적</li>
+              </ul>
+              <ul>
+                <li data-final-i18n="event5">반응 비교 리포트</li>
+                <li data-final-i18n="event6">미국 시장 진단 1회</li>
+                <li data-final-i18n="event7">전략 미팅 1회</li>
+                <li data-final-i18n="event8">후보군 추가 제안</li>
+              </ul>
+            </div>
+            <p data-final-i18n="eventNote">
+              프로모션 조건과 외부 실비 포함 여부는 상담 후 최종 견적에서
+              확인됩니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="launch-contact"
+        id="contact"
+        aria-labelledby="launch-contact-title"
+      >
+        <div class="shell launch-contact__grid">
+          <div class="launch-contact__intro" data-reveal>
+            <p class="launch-contact__kicker">U.S. LAUNCH INQUIRY</p>
+            <h2 id="launch-contact-title" data-final-i18n="contactTitle">
+              우리 브랜드도<br />미국에서 될지,<br />이제 추측하지 마세요.
+            </h2>
+            <p data-final-i18n="contactBody">
+              제품 하나와 확인하고 싶은 가설을 알려주세요. Koaus가 브랜드의 현재
+              단계와 예산에 맞춰 가장 작은 미국 시장 검증 방식부터 제안합니다.
+            </p>
+            <div class="launch-contact__promise">
+              <span>01</span>
+              <p data-final-i18n="contactPromise1">
+                한 제품부터 시작할 수 있는 현실적인 실행 범위
+              </p>
+              <span>02</span>
+              <p data-final-i18n="contactPromise2">
+                예산에 맞춘 크리에이터·UGC·커머스 구성
+              </p>
+              <span>03</span>
+              <p data-final-i18n="contactPromise3">
+                확대·수정·중단을 판단할 수 있는 다음 단계
+              </p>
+            </div>
+          </div>
+
+          <form
+            class="launch-inquiry-form"
+            id="lead-form"
+            novalidate
+            data-reveal
+          >
+            <input
+              id="selected-plan"
+              name="selectedPlan"
+              type="hidden"
+              value=""
+            />
             <div class="launch-field launch-field--full">
-              <label for="brand-name"><span data-i18n="labelBrand">브랜드명</span> <b>*</b></label>
-              <input id="brand-name" name="brand" type="text" required data-placeholder-ko="브랜드명" data-placeholder-en="Brand name" placeholder="브랜드명" autocomplete="organization" />
+              <label for="inquiry-type"
+                ><span data-i18n="labelInquiryType">문의 유형</span>
+                <b>*</b></label
+              >
+              <select id="inquiry-type" name="inquiryType" required>
+                <option
+                  value=""
+                  selected
+                  disabled
+                  data-i18n="selectInquiryType"
+                >
+                  문의 유형 선택
+                </option>
+                <option value="us-launch" data-i18n="inquiryUsLaunch">
+                  미국 런칭 통합
+                </option>
+                <option value="market-validation" data-i18n="inquiryValidation">
+                  미국 시장 검증
+                </option>
+                <option value="creator-seeding" data-i18n="inquiryCreator">
+                  크리에이터 시딩
+                </option>
+                <option value="ugc-production" data-i18n="inquiryUgc">
+                  UGC 제작
+                </option>
+                <option value="amazon-launch" data-i18n="inquiryAmazon">
+                  Amazon 런칭·운영
+                </option>
+                <option value="export-voucher" data-i18n="inquiryExportVoucher">
+                  수출바우처 문의
+                </option>
+                <option value="other" data-i18n="other">기타</option>
+              </select>
             </div>
-            <div class="launch-field">
-              <label for="contact-name"><span data-i18n="labelName">담당자 성함</span> <b>*</b></label>
-              <input id="contact-name" name="name" type="text" required data-placeholder-ko="담당자 성함" data-placeholder-en="Contact name" placeholder="담당자 성함" autocomplete="name" />
+
+            <div class="launch-form-grid">
+              <div class="launch-field launch-field--full">
+                <label for="brand-name"
+                  ><span data-i18n="labelBrand">브랜드명</span> <b>*</b></label
+                >
+                <input
+                  id="brand-name"
+                  name="brand"
+                  type="text"
+                  required
+                  data-placeholder-ko="브랜드명"
+                  data-placeholder-en="Brand name"
+                  placeholder="브랜드명"
+                  autocomplete="organization"
+                />
+              </div>
+              <div class="launch-field">
+                <label for="contact-name"
+                  ><span data-i18n="labelName">담당자 성함</span>
+                  <b>*</b></label
+                >
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  required
+                  data-placeholder-ko="담당자 성함"
+                  data-placeholder-en="Contact name"
+                  placeholder="담당자 성함"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="launch-field">
+                <label for="contact-phone"
+                  ><span data-i18n="labelPhone">연락처</span> <b>*</b></label
+                >
+                <input
+                  id="contact-phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  data-placeholder-ko="010-0000-0000"
+                  data-placeholder-en="+1 000 000 0000"
+                  placeholder="010-0000-0000"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="launch-field launch-field--full">
+                <label for="contact-email"
+                  ><span data-i18n="labelEmail">이메일</span> <b>*</b></label
+                >
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  required
+                  data-placeholder-ko="email@example.com"
+                  data-placeholder-en="email@example.com"
+                  placeholder="email@example.com"
+                  autocomplete="email"
+                />
+              </div>
             </div>
-            <div class="launch-field">
-              <label for="contact-phone"><span data-i18n="labelPhone">연락처</span> <b>*</b></label>
-              <input id="contact-phone" name="phone" type="tel" required data-placeholder-ko="010-0000-0000" data-placeholder-en="+1 000 000 0000" placeholder="010-0000-0000" autocomplete="tel" />
-            </div>
+
             <div class="launch-field launch-field--full">
-              <label for="contact-email"><span data-i18n="labelEmail">이메일</span> <b>*</b></label>
-              <input id="contact-email" name="email" type="email" required data-placeholder-ko="email@example.com" data-placeholder-en="email@example.com" placeholder="email@example.com" autocomplete="email" />
+              <label for="launch-goal"
+                ><span data-final-i18n="labelGoalDetail"
+                  >추가로 알려주실 내용</span
+                >
+                <b>*</b></label
+              >
+              <textarea
+                id="launch-goal"
+                name="goal"
+                rows="7"
+                required
+                data-placeholder-ko="제품, 일정, 현재 미국 진출 단계와 가장 궁금한 점을 자유롭게 적어주세요."
+                data-placeholder-en="Tell us about your product, timeline, current U.S. launch stage, and what you want to validate."
+                placeholder="제품, 일정, 현재 미국 진출 단계와 가장 궁금한 점을 자유롭게 적어주세요."
+              ></textarea>
             </div>
-          </div>
 
-          <div class="launch-field launch-field--full">
-            <label for="launch-goal"><span data-final-i18n="labelGoalDetail">추가로 알려주실 내용</span> <b>*</b></label>
-            <textarea id="launch-goal" name="goal" rows="7" required data-placeholder-ko="제품, 일정, 현재 미국 진출 단계와 가장 궁금한 점을 자유롭게 적어주세요." data-placeholder-en="Tell us about your product, timeline, current U.S. launch stage, and what you want to validate." placeholder="제품, 일정, 현재 미국 진출 단계와 가장 궁금한 점을 자유롭게 적어주세요."></textarea>
-          </div>
+            <label class="launch-consent"
+              ><input type="checkbox" name="consent" required /><span
+                data-i18n="consent"
+                >문의 검토와 후속 연락을 위해 입력한 정보를 저장하는 데
+                동의합니다.</span
+              ></label
+            >
+            <button
+              class="launch-submit"
+              type="submit"
+              data-final-i18n="submitDiagnosis"
+            >
+              무료 30분 진단 신청하기 →
+            </button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+            <p class="launch-form-note" data-i18n="formNote">
+              현재 로컬 MVP에서는 문의 내용이 이 브라우저에 저장됩니다. 공개 전
+              실제 이메일 수집 서비스를 연결해야 합니다.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
 
-          <label class="launch-consent"><input type="checkbox" name="consent" required /><span data-i18n="consent">문의 검토와 후속 연락을 위해 입력한 정보를 저장하는 데 동의합니다.</span></label>
-          <button class="launch-submit" type="submit" data-final-i18n="submitDiagnosis">무료 30분 진단 신청하기 →</button>
-          <p class="form-message" role="status" aria-live="polite"></p>
-          <p class="launch-form-note" data-i18n="formNote">현재 로컬 MVP에서는 문의 내용이 이 브라우저에 저장됩니다. 공개 전 실제 이메일 수집 서비스를 연결해야 합니다.</p>
-        </form>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <strong>koaus</strong> —
+          <span data-i18n="footerText"
+            >한국 브랜드의 미국 시장 검증과 론칭 실행.</span
+          >
+        </div>
+        <div class="footer-links">
+          <a href="#services" data-i18n="navServices">서비스</a
+          ><a href="#pricing" data-final-i18n="navPricing">가격 안내</a
+          ><a href="#contact" data-i18n="navContact">문의하기</a
+          ><a
+            href="https://www.instagram.com/koaus.shop"
+            target="_blank"
+            rel="noreferrer"
+            >Instagram</a
+          >
+        </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="shell footer-inner"><div><strong>koaus</strong> — <span data-i18n="footerText">한국 브랜드의 미국 시장 검증과 론칭 실행.</span></div><div class="footer-links"><a href="#services" data-i18n="navServices">서비스</a><a href="#pricing" data-final-i18n="navPricing">가격 안내</a><a href="#contact" data-i18n="navContact">문의하기</a><a href="https://www.instagram.com/koaus.shop" target="_blank" rel="noreferrer">Instagram</a></div></div></footer>
-</body>
+    </footer>
+  </body>
 </html>
