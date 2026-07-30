@@ -20,20 +20,21 @@ koaus는 크리에이터 검색, UGC 제작, 커머스 실행을 따로 보여�
 ## 주요 화면 구성
 
 1. **UGC 영상 모자이크 히어로** — 한국 브랜드의 미국 시장 검증 메시지
-2. **Problem** — 고객·콘텐츠·구매 전환의 불확실성
-3. **Solution** — Creator · UGC · Commerce 모듈
-4. **How It Works** — Diagnose → Match → Launch → Measure
-5. **Results & Metrics** — 콘텐츠·고객·커머스·의사결정 지표
-6. **Pricing** — Starter / Validation / Commerce 패키지
-7. **Rate Card & Add-ons** — 크리에이터 1인 단가와 선택 옵션
-8. **First Launch Event** — 첫 파일럿 파트너 프로모션
-9. **U.S. Launch Inquiry** — 패키지·예산·검증 목표를 포함한 문의 폼
+2. **Problem → Solution** — 고객·콘텐츠·구매 불확실성과 Creator · UGC · Commerce 대응 구조
+3. **How It Works** — Diagnose → Match → Launch → Measure 인터랙티브 타임라인
+4. **Results & Metrics** — 콘텐츠·고객·커머스·의사결정 지표 대시보드
+5. **Pricing** — Starter / Validation / Commerce 패키지
+6. **Rate Card & Add-ons** — 크리에이터 1인 단가와 선택 옵션
+7. **First Launch Event** — 첫 파일럿 파트너 프로모션
+8. **U.S. Launch Inquiry** — 패키지·예산·검증 목표를 포함한 문의 폼
 
 ## 구현 기능
 
 - 한국어/영어 전환 및 선택 상태 저장
 - 데스크톱·태블릿·모바일 반응형 레이아웃
 - 모바일 메뉴
+- 우측 고정 섹션 네비게이션과 현재 섹션 표시
+- How It Works 단계별 클릭·키보드 인터랙션
 - Intersection Observer 기반 등장 애니메이션
 - 화면 밖 UGC 영상 재생 중지 및 모션 감소 설정 대응
 - 패키지 비교 / 크리에이터 단가 / 추가 옵션 탭

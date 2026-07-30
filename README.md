@@ -20,20 +20,21 @@ koaus presents creator sourcing, UGC production, and commerce tracking as one co
 ## Main page structure
 
 1. **UGC video-mosaic hero** — U.S. market-validation message
-2. **Problem** — customer, content, and commerce uncertainty
-3. **Solution** — Creator · UGC · Commerce modules
-4. **How It Works** — Diagnose → Match → Launch → Measure
-5. **Results & Metrics** — content, audience, commerce, and decision signals
-6. **Pricing** — Starter / Validation / Commerce packages
-7. **Rate Card & Add-ons** — per-creator guide rates and optional rights
-8. **First Launch Event** — founding-pilot promotion
-9. **U.S. Launch Inquiry** — package, budget, and validation-goal form
+2. **Problem → Solution** — customer, content, and commerce uncertainty mapped to Creator · UGC · Commerce actions
+3. **How It Works** — interactive Diagnose → Match → Launch → Measure timeline
+4. **Results & Metrics** — content, audience, commerce, and decision dashboard
+5. **Pricing** — Starter / Validation / Commerce packages
+6. **Rate Card & Add-ons** — per-creator guide rates and optional rights
+7. **First Launch Event** — founding-pilot promotion
+8. **U.S. Launch Inquiry** — package, budget, and validation-goal form
 
 ## Included interactions
 
 - Korean/English language switching with persistence
 - Responsive desktop, tablet, and mobile layouts
 - Mobile navigation
+- Fixed right-side section rail with active-section state
+- Clickable and keyboard-operable How It Works steps
 - Intersection Observer reveal animations
 - UGC playback control outside the viewport and reduced-motion support
 - Package comparison, creator-rate, and add-on tabs

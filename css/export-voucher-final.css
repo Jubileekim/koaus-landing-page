@@ -1,0 +1,532 @@
+/* ========================================================================== */
+/* Export Voucher page — bright gradient refinement                          */
+/* ========================================================================== */
+
+.export-voucher-page {
+  --ink: #101311;
+  --paper: #fff8e9;
+  --cream: #fffdf8;
+  --lime: #ccff42;
+  --coral: #ff4f3b;
+  --rust: #ff4f3b;
+  --yellow: #ffcc32;
+  --orange: #ff9900;
+  --blue: #0085c7;
+  --purple: #833ab4;
+  --muted: #676861;
+  --line: rgba(16, 19, 17, 0.14);
+  overflow-x: hidden;
+  color: var(--ink);
+  background: #fff9ed;
+}
+
+.export-voucher-page .site-header {
+  border-bottom-color: rgba(16, 19, 17, 0.1);
+  background: rgba(255, 249, 237, 0.86);
+}
+
+.export-voucher-page .desktop-nav .is-current {
+  color: var(--coral);
+}
+
+.export-voucher-page .section {
+  padding: clamp(72px, 7.2vw, 104px) 0;
+}
+
+.export-voucher-page .section-kicker {
+  color: var(--coral);
+  font-size: 0.68rem;
+  letter-spacing: 0.17em;
+}
+
+.export-voucher-page .section-heading {
+  grid-template-columns: minmax(145px, 0.46fr) minmax(0, 1.54fr);
+  gap: clamp(28px, 5vw, 72px);
+  margin-bottom: 42px;
+}
+
+.export-voucher-page .section-heading h2,
+html[lang="ko"] .export-voucher-page .section-heading h2,
+html[lang="en"] .export-voucher-page .section-heading h2 {
+  max-width: 780px;
+  font-size: clamp(2rem, 3.2vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+
+.export-voucher-page .section-heading p {
+  max-width: 690px;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+/* Hero -------------------------------------------------------------------- */
+.export-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(72px, 8.2vw, 116px) 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 7% 12%, rgba(255, 204, 50, 0.62), transparent 31%),
+    radial-gradient(circle at 91% 8%, rgba(255, 79, 59, 0.3), transparent 29%),
+    radial-gradient(circle at 83% 93%, rgba(0, 133, 199, 0.14), transparent 34%),
+    linear-gradient(134deg, #fff9e8 0%, #fff0d9 52%, #ffe7df 100%);
+}
+
+.export-hero::before {
+  position: absolute;
+  top: -150px;
+  right: 34%;
+  width: 360px;
+  height: 360px;
+  border: 56px solid rgba(131, 58, 180, 0.06);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.export-hero::after {
+  position: absolute;
+  right: -120px;
+  bottom: -250px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: rgba(204, 255, 66, 0.14);
+  content: "";
+  pointer-events: none;
+}
+
+.export-hero__grid {
+  position: relative;
+  z-index: 1;
+  grid-template-columns: minmax(0, 1.08fr) minmax(330px, 0.82fr);
+  gap: clamp(38px, 6vw, 84px);
+}
+
+.export-hero__copy h1,
+html[lang="ko"] .export-hero__copy h1,
+html[lang="en"] .export-hero__copy h1 {
+  max-width: 760px;
+  margin: 15px 0 24px;
+  color: var(--ink);
+  font-size: clamp(2.35rem, 3.65vw, 3.45rem);
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+
+.export-hero__copy h1 em {
+  color: var(--coral);
+  background: transparent;
+  font-style: normal;
+}
+
+.export-hero__copy > p:not(.section-kicker) {
+  max-width: 680px;
+  color: rgba(16, 19, 17, 0.69);
+  font-size: 0.98rem;
+  line-height: 1.78;
+}
+
+.export-hero .button--lime {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: var(--lime);
+}
+
+.export-official-link {
+  border-color: rgba(16, 19, 17, 0.38);
+  color: var(--ink);
+  background: rgba(255, 253, 248, 0.48);
+  backdrop-filter: blur(12px);
+}
+
+.export-official-link:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.export-status-card {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(28px, 3.5vw, 42px);
+  border: 1px solid rgba(16, 19, 17, 0.13);
+  border-radius: 30px;
+  color: var(--ink);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.87), rgba(255, 251, 242, 0.69));
+  box-shadow: 0 30px 80px rgba(105, 62, 34, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.export-status-card::before {
+  position: absolute;
+  top: -56px;
+  right: -55px;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background: var(--coral);
+  opacity: 0.92;
+  content: "";
+}
+
+.export-status-card::after {
+  position: absolute;
+  top: 27px;
+  right: 28px;
+  width: 38px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  content: "";
+  transform: rotate(-18deg);
+}
+
+.export-status-card__badge {
+  position: relative;
+  z-index: 1;
+  padding: 7px 11px;
+  color: var(--ink);
+  background: var(--lime);
+  font-size: 0.7rem;
+}
+
+.export-status-card h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 470px;
+  margin: 21px 0 12px;
+  font-size: clamp(1.45rem, 2.25vw, 2rem);
+  line-height: 1.25;
+  letter-spacing: -0.045em;
+}
+
+.export-status-card > p,
+.export-status-card li {
+  position: relative;
+  z-index: 1;
+  color: rgba(16, 19, 17, 0.66);
+  font-size: 0.9rem;
+  line-height: 1.68;
+}
+
+.export-status-card ul {
+  position: relative;
+  z-index: 1;
+  margin-top: 22px;
+  padding-top: 21px;
+  border-top-color: rgba(16, 19, 17, 0.12);
+}
+
+/* What it is -------------------------------------------------------------- */
+.export-voucher-page .section--cream {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 5% 95%, rgba(0, 133, 199, 0.11), transparent 31%),
+    radial-gradient(circle at 92% 12%, rgba(255, 204, 50, 0.24), transparent 30%),
+    #fffefb;
+}
+
+.export-info-grid {
+  gap: 16px;
+}
+
+.export-info-card {
+  min-height: 245px;
+  padding: 28px;
+  border-color: rgba(16, 19, 17, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(55, 38, 24, 0.06);
+}
+
+.export-info-card:nth-child(1) {
+  background: linear-gradient(145deg, #fffdf8, #fff0df);
+}
+
+.export-info-card:nth-child(2) {
+  background: linear-gradient(145deg, #fff8d8, #ffe5ad);
+}
+
+.export-info-card:nth-child(3) {
+  background: linear-gradient(145deg, #edf8ff, #d7efff);
+}
+
+.export-info-card > span {
+  width: 39px;
+  height: 39px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.export-info-card:nth-child(2) > span {
+  background: var(--coral);
+}
+
+.export-info-card:nth-child(3) > span {
+  background: var(--blue);
+}
+
+.export-info-card h3 {
+  margin: 44px 0 11px;
+  font-size: 1.22rem;
+  line-height: 1.35;
+}
+
+.export-info-card p {
+  font-size: 0.9rem;
+  line-height: 1.68;
+}
+
+/* Koaus scope ------------------------------------------------------------- */
+.export-voucher-page .section--ink {
+  position: relative;
+  overflow: hidden;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 94% 4%, rgba(255, 79, 59, 0.17), transparent 28%),
+    radial-gradient(circle at 6% 97%, rgba(204, 255, 66, 0.23), transparent 28%),
+    linear-gradient(140deg, #fff6df 0%, #fffaf1 52%, #f1f8ff 100%);
+}
+
+.export-voucher-page .section--ink .section-kicker {
+  color: var(--coral);
+}
+
+.export-voucher-page .section--ink .section-heading p {
+  color: var(--muted);
+}
+
+.export-scope-grid {
+  gap: 16px;
+}
+
+.export-scope-card {
+  min-height: 250px;
+  padding: 29px;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 0 22px 55px rgba(37, 37, 31, 0.1);
+}
+
+.export-scope-card:nth-child(1) {
+  color: #fff;
+  background: linear-gradient(145deg, #ff654f, #ff3f2a);
+}
+
+.export-scope-card:nth-child(2) {
+  color: #fff;
+  background: linear-gradient(145deg, #16a2dd, #0078bb);
+}
+
+.export-scope-card:nth-child(3) {
+  color: var(--ink);
+  background: linear-gradient(145deg, #dcff78, #bdf52e);
+}
+
+.export-scope-card:nth-child(4) {
+  color: var(--ink);
+  background: linear-gradient(145deg, #ffdf63, #ffb91c);
+}
+
+.export-scope-card small {
+  color: currentColor;
+  opacity: 0.78;
+  font-size: 0.68rem;
+}
+
+.export-scope-card h3 {
+  max-width: 520px;
+  font-size: clamp(1.35rem, 2.1vw, 1.82rem);
+  line-height: 1.25;
+}
+
+.export-scope-card p {
+  color: currentColor;
+  opacity: 0.76;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* Process ----------------------------------------------------------------- */
+.export-process-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 13% 14%, rgba(131, 58, 180, 0.08), transparent 30%),
+    radial-gradient(circle at 87% 88%, rgba(255, 153, 0, 0.13), transparent 31%),
+    #fffefb;
+}
+
+.export-process-list {
+  gap: 11px;
+}
+
+.export-process-list li {
+  position: relative;
+  overflow: hidden;
+  padding: 24px 26px;
+  border-color: rgba(16, 19, 17, 0.11);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 14px 35px rgba(49, 37, 28, 0.045);
+}
+
+.export-process-list li::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: var(--coral);
+  content: "";
+}
+
+.export-process-list li:nth-child(2)::after {
+  background: var(--blue);
+}
+
+.export-process-list li:nth-child(3)::after {
+  background: var(--lime);
+}
+
+.export-process-list li:nth-child(4)::after {
+  background: var(--yellow);
+}
+
+.export-process-list b {
+  color: var(--coral);
+  font-size: 0.72rem;
+}
+
+.export-process-list li:nth-child(2) b {
+  color: var(--blue);
+}
+
+.export-process-list li:nth-child(3) b {
+  color: #7ca700;
+}
+
+.export-process-list li:nth-child(4) b {
+  color: #d47e00;
+}
+
+.export-process-list h3 {
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.export-process-list p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+/* Final CTA --------------------------------------------------------------- */
+.export-final-cta {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(70px, 7.2vw, 96px) 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(255, 255, 255, 0.48), transparent 30%),
+    radial-gradient(circle at 91% 84%, rgba(255, 79, 59, 0.25), transparent 32%),
+    linear-gradient(128deg, #d7ff68 0%, #eeff9f 46%, #ffcf4a 100%);
+}
+
+.export-final-cta::after {
+  position: absolute;
+  right: -85px;
+  bottom: -145px;
+  width: 330px;
+  height: 330px;
+  border: 52px solid rgba(16, 19, 17, 0.055);
+  border-radius: 50%;
+  content: "";
+}
+
+.export-final-cta__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.export-final-cta h2,
+html[lang="ko"] .export-final-cta h2,
+html[lang="en"] .export-final-cta h2 {
+  max-width: 760px;
+  margin: 9px 0 14px;
+  font-size: clamp(2.05rem, 3.35vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+
+.export-final-cta p {
+  max-width: 690px;
+  font-size: 0.94rem;
+  line-height: 1.72;
+}
+
+.export-voucher-page .site-footer {
+  background: #fff9ed;
+}
+
+@media (max-width: 900px) {
+  .export-voucher-page .section-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .export-hero__grid,
+  .export-info-grid,
+  .export-scope-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .export-status-card {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 560px) {
+  .export-hero {
+    padding: 58px 0 72px;
+  }
+
+  .export-hero__copy h1,
+  html[lang="ko"] .export-hero__copy h1,
+  html[lang="en"] .export-hero__copy h1 {
+    font-size: 2.25rem;
+    line-height: 1.12;
+  }
+
+  .export-voucher-page .section-heading h2,
+  html[lang="ko"] .export-voucher-page .section-heading h2,
+  html[lang="en"] .export-voucher-page .section-heading h2 {
+    font-size: 2.05rem;
+  }
+
+  .export-status-card,
+  .export-info-card,
+  .export-scope-card {
+    padding: 22px;
+  }
+
+  .export-info-card {
+    min-height: 220px;
+  }
+
+  .export-scope-card {
+    min-height: 235px;
+  }
+
+  .export-process-list li {
+    grid-template-columns: 36px 1fr;
+    padding: 21px 17px 21px 21px;
+  }
+
+  .export-final-cta h2,
+  html[lang="ko"] .export-final-cta h2,
+  html[lang="en"] .export-final-cta h2 {
+    font-size: 2.12rem;
+  }
+}
